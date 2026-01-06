@@ -1,7 +1,7 @@
 # 🐍 Python Learning: Day 2
 
 ## Today's Focus: Variables & f-strings (Theory)
-Today I focused on understanding the core building blocks of Python logic. Even though I didn't write executable scripts today, I mastered the following concepts:
+Today I focused on understanding the core building blocks of Python logic. Even though I didn't write codes today, I mastered the following:
 
 ### 1. Variables (The Containers)
 * **What they are:** Names that hold data values.
@@ -14,4 +14,3 @@ Today I focused on understanding the core building blocks of Python logic. Even 
 * **Example Structure:** `print(f"The status of {server_name} is: {status}")`
 
 ---
-*Next Goal: Write a basic automation script using these concepts.*
