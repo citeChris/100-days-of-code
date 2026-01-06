@@ -16,6 +16,7 @@ To become a **Cyber Security Analyst**. I believe that to protect systems, you m
 - [x] Set up local development environment and Git.
 - [x] Initialized this repository with my first HTML/CSS files.
 - [x] Started freeCodeCamp Responsive Web Design certification.
+- [x] Started freeCodeCamp Python Certification.
 
 ## 🛠️ Project Structure
 - `/` - Root folder containing various HTML/CSS practice pages.
