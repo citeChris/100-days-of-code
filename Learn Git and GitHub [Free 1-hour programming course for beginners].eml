@@ -1,0 +1,136 @@
+Delivered-To: citechris.ng@gmail.com
+Received: by 2002:a05:6400:2106:b0:2bf:127:5109 with SMTP id o6csp248573ecx;
+        Fri, 5 Dec 2025 03:32:51 -0800 (PST)
+X-Google-Smtp-Source: AGHT+IHJAnX30+oAVsCn5O6CnHg1EzU0BH81zmDi0fnpozauHP0mF1TUcAPMyo7UUjhvxLtuSJ8n
+X-Received: by 2002:a05:620a:459f:b0:8a9:eb9d:512b with SMTP id af79cd13be357-8b5e47d00eamr1318147485a.6.1764934371096;
+        Fri, 05 Dec 2025 03:32:51 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1764934371; cv=none;
+        d=google.com; s=arc-20240605;
+        b=gDq+k1f1FVpnseX6GnBnMcYac5KNIkz4p/qTHjhIa3+fa2drJk1ZuDFgKjkewv/wWe
+         BJeiG+9WmJjhdRHpM9l28l2F4iwAHTz6q7O24VJYr9KBB7xOq15PxP1+Cm9lPtpcbx4n
+         AMo+b6YlB95FaegQIIb5xbk/ZNuGYQJSWOXLJT62zHITQOF4Jjcyc6GHx1zPbx75y02s
+         3lkj6lxPem232rNdY7yVBz9/1awhAjYIsnicz4wCRM8IWFe/HlQm0WISj7JR9+iSEgpt
+         291nxJar6mdO1JCkPApLU3b508GlWDDry17EdctoWeEPu8TF2XIqUiboZdtijQtYJsmi
+         WXLA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=feedback-id:date:message-id:content-transfer-encoding:mime-version
+         :subject:to:from:dkim-signature:dkim-signature;
+        bh=akHXYbdYuX1vNu4GBdYqK1hzeirisxNbkPdY4hpvKco=;
+        fh=dip6u3YqD9qEP+0Tw28hRdYMFQG6Qb1OMQsWgNUO73o=;
+        b=GhykG/shvaGMlbW2w1ychOhyC+uWFru/xXul6l5HBD772/bR1bStzObJLmn0Clv9Os
+         v3ID4il0zc/RYxYIPsfkNPNlulnlZz1Slb0qRgML3HZYAIAP9hJXCK9LSG2VfRPwnJ0O
+         SHFvY07A83HS6tNxJFzr2+jHa42kMOsh9p34tLjr8/Vkby2XWx30N50IATAY+uWJ4ZXY
+         +fh5Jgms3eC5zeAO9zgULeAMZe0xAsqsqEnnNfBff/pTCjc6jRBLiiJe0+L7ouFEL14s
+         +MeKp0MI+I/mrtB5chEk0Cicypj3g9IZZ4aFKq9PD0AHT3uZbedVliMdpHOZ539O2zl8
+         APNw==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@freecodecamp.org header.s=xtvzsasjxsje2d2eg3zirbmf5yz34y3f header.b=rJFdnObu;
+       dkim=pass header.i=@amazonses.com header.s=ndjes4mrtuzus6qxu3frw3ubo3gpjndv header.b=el35Mb5d;
+       spf=pass (google.com: domain of 010f019aee494529-71adb8bb-dd10-4a07-be2b-ed10e483dbc6-000000@us-east-2.amazonses.com designates 54.240.115.196 as permitted sender) smtp.mailfrom=010f019aee494529-71adb8bb-dd10-4a07-be2b-ed10e483dbc6-000000@us-east-2.amazonses.com;
+       dmarc=pass (p=QUARANTINE sp=REJECT dis=NONE) header.from=freecodecamp.org
+Return-Path: <010f019aee494529-71adb8bb-dd10-4a07-be2b-ed10e483dbc6-000000@us-east-2.amazonses.com>
+Received: from a115-196.smtp-out.us-east-2.amazonses.com (a115-196.smtp-out.us-east-2.amazonses.com. [54.240.115.196])
+        by mx.google.com with ESMTPS id 6a1803df08f44-88827f21365si49561226d6.53.2025.12.05.03.32.50
+        for <citechris.ng@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Fri, 05 Dec 2025 03:32:51 -0800 (PST)
+Received-SPF: pass (google.com: domain of 010f019aee494529-71adb8bb-dd10-4a07-be2b-ed10e483dbc6-000000@us-east-2.amazonses.com designates 54.240.115.196 as permitted sender) client-ip=54.240.115.196;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@freecodecamp.org header.s=xtvzsasjxsje2d2eg3zirbmf5yz34y3f header.b=rJFdnObu;
+       dkim=pass header.i=@amazonses.com header.s=ndjes4mrtuzus6qxu3frw3ubo3gpjndv header.b=el35Mb5d;
+       spf=pass (google.com: domain of 010f019aee494529-71adb8bb-dd10-4a07-be2b-ed10e483dbc6-000000@us-east-2.amazonses.com designates 54.240.115.196 as permitted sender) smtp.mailfrom=010f019aee494529-71adb8bb-dd10-4a07-be2b-ed10e483dbc6-000000@us-east-2.amazonses.com;
+       dmarc=pass (p=QUARANTINE sp=REJECT dis=NONE) header.from=freecodecamp.org
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=xtvzsasjxsje2d2eg3zirbmf5yz34y3f; d=freecodecamp.org;
+	t=1764934370;
+	h=From:To:Subject:MIME-Version:Content-Type:Content-Transfer-Encoding:Message-ID:Date;
+	bh=akHXYbdYuX1vNu4GBdYqK1hzeirisxNbkPdY4hpvKco=;
+	b=rJFdnObuBUdTEiBvGh/l+DV3iBLTNtEDL5vY2j8oWpOnivk7VBhdB9HaQj1hpjUQ
+	/aFqOYglhzSOxr1F+2MN8OjcH249GGRPIigB90dvi57ZKJTO9H6/wC7pcoLQ6EiLUER
+	lWfl8qtTUW1tHarG8Cb8ovlyuzomeqopgqXvR3q0EPXzyB+pgD27FEVVpZz1/eJn8Kc
+	+5OqvnkIoyC1eFPB9N/3UAHcDqBEbNDaHWvVq+iAWrs4LB1A0JoCeWjDIOjbaEDP0s5
+	ECuEHAre5Ais/R//EOtgR0nlicZ8uiI/ExKAeopBhvStURLcdFOBugj2zRuCKs4zde7
+	ZXeOkh7+uQ==
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=ndjes4mrtuzus6qxu3frw3ubo3gpjndv; d=amazonses.com; t=1764934370;
+	h=From:To:Subject:MIME-Version:Content-Type:Content-Transfer-Encoding:Message-ID:Date:Feedback-ID;
+	bh=akHXYbdYuX1vNu4GBdYqK1hzeirisxNbkPdY4hpvKco=;
+	b=el35Mb5dGyWai1yGBLfhLvCPQhlT+nG6IKMcXZOhUfxccPUfp4lLTtP33tUkwqU9
+	cqRsfMqOKffn8yilsHVGYeOcoeWEVDqbIq8USr+qW4/8gbMzHY9k/w1Q/Z3NHMp5OdW
+	spgzLQBC01oOVrUd+c5HgxAyKxGE3hwfLMjopvsY=
+From: Quincy Larson <quincy@freecodecamp.org>
+To: citechris.ng@gmail.com
+Subject: Learn Git and GitHub [Free 1-hour programming course for beginners]
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Message-ID: <010f019aee494529-71adb8bb-dd10-4a07-be2b-ed10e483dbc6-000000@us-east-2.amazonses.com>
+Date: Fri, 5 Dec 2025 11:32:50 +0000
+Feedback-ID: ::1.us-east-2.1hDOIBmCg4sVkd/C4kNDG1+wLyFqQW9X4Rn89gF2+7s=:AmazonSES
+X-SES-Outgoing: 2025.12.05-54.240.115.196
+
+Here are this week's five freeCodeCamp resources that are worth your time:
+
+1. freeCodeCamp just published a Git and GitHub for beginners course. Git i=
+s a powerful version control tool that most developers now use to build sof=
+tware projects together. GitHub is a popular platform that adds tons of col=
+laboration features on top of Git. You'll learn the basics of both in this =
+course, which covers branching, merging, pull requests, and other key conce=
+pts. Well worth your time. (1 hour YouTube course): https://www.freecodecam=
+p.org/news/git-and-github-crash-course-for-beginners
+
+2. freeCodeCamp also just launched our new Responsive Web Design Certificat=
+ion. You can now take the final exam and earn this verified cert, then add =
+it to your LinkedIn, CV, or personal website. This is version 10 of the cor=
+e fCC curriculum. The community collectively spent thousands of hours devel=
+oping all this as your shortest path to front-end development skills. This =
+announcement and comprehensive FAQ will help you figure out where this fits=
+ into your journey toward your learning goals. (100+ hour interactive curri=
+culum): https://www.freecodecamp.org/news/freecodecamps-new-responsive-web-=
+design-certification-is-now-live/
+
+3. On this week's freeCodeCamp podcast I interview Andrea Griffiths, who ta=
+ught herself programming using freeCodeCamp while working in construction. =
+She moved to the US from Colombia when she was 17, and within 6 months she =
+joined the US Army. She ran a chain of gyms before landing a support role a=
+t a tech company, then ascended to Product Manager and ultimately Developer=
+ Advocate at GitHub. She shares tips for busy parents who want to learn new=
+ skills, and how to stay focused in an increasingly distracting world. (1 h=
+our watch or listen in your favorite podcast app): https://www.freecodecamp=
+.org/news/tips-from-serial-career-changer-github-andrea-griffiths-podcast-1=
+99/
+
+4. freeCodeCamp also just published a new Harvard CS50 course that will tea=
+ch you R, a popular programming language for statistical computing and data=
+ science. You'll work with real-world datasets inside the RStudio Integrate=
+d Development Environment. You'll learn about Vectors, Matrices, Data Frame=
+s, filtering, visualizations, and more. (9 hour YouTube course): https://ww=
+w.freecodecamp.org/news/learn-r-programming-from-harvard-university/
+
+5. It is with great pride that I announce our Top Open Source Contributors =
+of 2025. It's been a super productive year for the global freeCodeCamp comm=
+unity. As we start our 12th year as a community, we=E2=80=99re firing on al=
+l cylinders, pushing forward more steadily than ever toward a future of ope=
+n source education. (5 minute read): https://www.freecodecamp.org/news/free=
+codecamp-top-open-source-contributors-2025/
+
+freeCodeCamp is a charity that creates open source learning resources to he=
+lp people learn math, programming, and computer science. If open education =
+is an important cause for you, please consider supporting our mission: http=
+s://www.freecodecamp.org/donate
+
+Quote of the Week:=20
+=E2=80=9CTake a moment to stop and think about what it is that truly matter=
+s to you. And then start making the changes that you need to make.=E2=80=9D=
+ =E2=80=94 Andrea Griffiths on this week's freeCodeCamp podcast talking abo=
+ut her decision to learn programming and launch into an entirely new career
+
+Until next week, happy coding.
+
+-- Quincy Larson
+
+Teacher and founder of freeCodeCamp.org
+
+If these aren't worth your time, you can turn them off: https://www.freecod=
+ecamp.org/ue/5qjcIkxtNNm2P6iPhc9pi

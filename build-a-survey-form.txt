@@ -1,0 +1,82 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Survey Form</title>
+</head>
+<body>
+
+  <h1 id="title">Survey Form</h1>
+
+  <p id="description">Please fill out this short survey below.</p>
+
+  <form id="survey-form">
+
+    <label id="name-label" for="name">Name:</label>
+    <input 
+      id="name" 
+      type="text" 
+      name="name" 
+      placeholder="Enter your name" 
+      required
+    />
+
+    <label id="email-label" for="email">Email:</label>
+    <input 
+      id="email" 
+      type="email" 
+      name="email" 
+      placeholder="Enter your email" 
+      required
+    />
+
+    <label id="number-label" for="number">Age:</label>
+    <input 
+      id="number" 
+      type="number" 
+      name="age" 
+      placeholder="Enter your age" 
+      min="10" 
+      max="100"
+    />
+
+    <label for="dropdown">Choose your favorite subject:</label>
+    <select id="dropdown" name="subject">
+      <option value="math">Math</option>
+      <option value="science">Science</option>
+      <option value="history">History</option>
+    </select>
+
+    <p>Rate our service:</p>
+    <label>
+      <input type="radio" name="rating" value="good"> Good
+    </label>
+    <label>
+      <input type="radio" name="rating" value="bad"> Bad
+    </label>
+
+    <p>What activities do you enjoy?</p>
+    <label>
+      <input type="checkbox" name="activities" value="sports"> Sports
+    </label>
+    <label>
+      <input type="checkbox" name="activities" value="music"> Music
+    </label>
+    <label>
+      <input type="checkbox" name="activities" value="reading"> Reading
+    </label>
+
+    <label for="comments">Additional comments:</label>
+    <textarea id="comments" name="comments" placeholder="Write your comments here..."></textarea>
+
+    <button id="submit" type="submit">Submit</button>
+
+  </form>
+
+</body>
+</html>
+
+** end of index.html **
+

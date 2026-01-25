@@ -1,0 +1,40 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <title>Classic Spaghetti Carbonara</title>
+      <meta charset="utf-8" />
+    </head>
+    <body>
+      <h1>Classic Spaghetti Carbonara</h1>
+      <p>A timeless Italian dish that’s quick to prepare yet rich in flavor. Perfect for weeknight dinners or impressing guests with minimal effort</p>
+      <section>
+    <h2>Ingredients</h2>
+      <ul>
+        <li>400g spaghetti</li>
+        <li>150g pancetta (or bacon), diced</li>
+        <li>2 large eggs</li>
+        <li>1 egg yolk</li>
+        <li>1 cup freshly grated Parmesan cheese</li>
+        <li>2 cloves garlic, minced</li>
+        <li>2 cloves garlic, minced</li>
+        <li>2 tbsp olive oil</li>
+      </ul>
+      </section>
+      <section>
+        <h2>Instructions</h2>
+        <ol>
+        <li><b>Cook the pasta:</b> Bring a large pot of salted water to a boil. Cook spaghetti until al dente. Reserve ½ cup of pasta water before draining.</li>
+        <li><b>Prepare pancetta:</b> In a skillet, heat olive oil over medium heat. Add pancetta and garlic, cooking until crisp. Remove from heat.</li>
+        <li><b>Mix the sauce:</b> In a bowl, whisk eggs, yolk, and Parmesan until smooth. Season generously with black pepper.</li>
+        <li><b>Combine:</b> Add hot pasta to the skillet with pancetta. Toss well. Slowly stir in the egg mixture, adding reserved pasta water as needed to create a creamy sauce.</li>
+        <li><b>Serve:</b> Plate immediately, topping with extra Parmesan and pepper.
+</li>
+      </section>
+      <img src="C:\HTML_PAGES\Classic Spaghetti.png" alt="Classic Spaghetti Carbonara">
+    </body>
+</html>
+
+** end of index.html **
+

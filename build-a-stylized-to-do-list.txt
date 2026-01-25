@@ -1,0 +1,83 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Styled To-Do List</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+
+<ul class="todo-list">
+    <li>
+        <input type="checkbox" id="frontend-dev">
+        <label for="frontend-dev">Learn Frontend development</label>
+        
+        <ul class="sub-item">
+            <li>
+                <a href="https://www.w3schools.com/" class="sub-item-link" target="_blank">Buy course</a>
+            </li>
+        </ul>
+    </li> <li>
+        <input type="checkbox" id="javascript">
+        <label for="javascript">Learn Javascript</label>
+        <ul class="sub-item">
+            <li>
+                <a href="https://www.w3schools.com/" class="sub-item-link" target="_blank">Buy course</a>
+            </li>
+        </ul>
+    </li>
+
+    <li>
+        <input type="checkbox" id="python">
+        <label for="python">Learn python programming</label>
+        <ul class="sub-item">
+            <li>
+                <a href="https://www.w3schools.com/" class="sub-item-link" target="_blank">Buy course</a>
+            </li>
+        </ul>
+    </li>
+
+    <li>
+        <input type="checkbox" id="c-sharp">
+        <label for="c-sharp">Learn C#</label>
+        <ul class="sub-item">
+            <li>
+                <a href="https://www.w3schools.com/" class="sub-item-link" target="_blank">Buy course</a>
+            </li>
+        </ul>
+    </li>
+
+</ul>
+
+</body>
+</html>
+
+** end of index.html **
+
+** start of styles.css **
+
+.sub-item-link {
+  text-decoration: none; 
+}
+a:link {
+    color: blue;
+}
+
+a:visited {
+    color: red;
+}
+
+a:hover {
+    color: green;
+}
+a:active {
+    color: cyan;
+}
+a:focus {
+    outline: 2px solid darkorange; 
+}
+
+** end of styles.css **
+
