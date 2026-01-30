@@ -1,0 +1,59 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Networking Event 2026</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="https://cdn.freecodecamp.org/curriculum/labs/event.jpg" alt="Event Banner">
+        <h1>Tech Networking Event 2026</h1>
+    </header>
+
+    <hr>
+
+    <main>
+        <section>
+            <h2>Keynote Speakers</h2>
+            <p>Learn from industry leaders in Python and Cyber Security.</p>
+        </section>
+        
+        <section>
+            <h2>Interactive Workshops</h2>
+            <p>Hands-on labs for junior developers.</p>
+        </section>
+    </main>
+</body>
+</html>
+
+** end of index.html **
+
+** start of styles.css **
+
+body {
+    padding: 50px 0;
+    margin: 0 auto;
+    width: 80vw;
+  /* min-height = 100vh - (top padding + bottom padding) */
+    /* 50px + 50px = 100px */
+    min-height: calc(100vh - 100px);
+    font-family: sans-serif;
+}
+
+/* Set width of hr and section relative to parent (body/main) */
+hr, section {
+    width: 90%;
+    margin: 20px auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+** end of styles.css **
+
