@@ -1,4 +1,4 @@
-# 🛡️ 100 Days of Code: Path to Skilled Coder
+# 🛡️ 100 Days of Code: Becoming a Skilled Coder
 ### Junior Developer Portfolio | HTML & CSS Focus
 
 Welcome to my collection of responsive web development projects! This repository tracks my journey through **freeCodeCamp's Responsive Web Design** certification and beyond.
@@ -10,7 +10,7 @@ Welcome to my collection of responsive web development projects! This repository
 
 ## 🛠️ Tech Stack
 - **Languages:** HTML5, CSS3
-- **Frameworks/Libraries:** (e.g., Bootstrap or Tailwind if you use them)
+- **Frameworks/Libraries:** (e.g., Bootstrap or Tailwind)
 - **Tools:** VS Code, Git, GitHub
 - **Learning Hub:** American Corner Ibadan (Jericho) 🇳🇬
 
