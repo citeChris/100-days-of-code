@@ -6,16 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
     :root {
-      /* ===== Customization ===== */
-      --bg-color: #000000;       /* Background color */
-      --glyph-color: #00ff7f;    /* Glyph color (Matrix green: #00ff7f or #00ff41) */
-      --glow-strength: 0.6;      /* 0–1: intensity of glow */
-      --font-size: 18;           /* Base character size in px */
-      --speed: 1.0;              /* 0.5 slow, 1.0 normal, 2.0 fast */
-      --density: 0.9;            /* 0.2 sparse, 0.9 dense */
-      --trail-length: 30;        /* 10 short, 30 long trails */
+      --bg-color: #000000;       
+      --glyph-color: #00ff7f;    
+      --glow-strength: 0.6;      
+      --font-size: 18;         
+      --speed: 1.0;            
+      --density: 0.9;          
+      --trail-length: 30;      
       --random-charset: "アカサタナハマヤラワ0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-      --fade-top: 0.08;          /* Start fade near top (0–0.3) */
+      --fade-top: 0.08;         
     }
 
     html, body, canvas {
@@ -26,7 +25,6 @@
       overflow: hidden;
     }
 
-    /* Optional subtle vignette for depth */
     body::after {
       content: "";
       position: fixed;
