@@ -1,0 +1,73 @@
+[33mcommit 6201346b0d6b71b393296c163f27ed111728b3b4[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: citeChris <citechris.ng@gmail.com>
+Date:   Wed Feb 11 21:59:21 2026 +0000
+
+    syncing my HTML and CSS work
+
+[33mcommit ff1ce8e8b2ba90d3b07773b41361e00debd71774[m
+Merge: 218e218 264c35a
+Author: citeChris <citechris.ng@gmail.com>
+Date:   Fri Jan 30 23:49:18 2026 +0000
+
+    Merge branch 'main' of https://github.com/citeChris/100-days-of-code
+
+[33mcommit 218e2184968f23f0d860c13f9a8c79d1be5cc0ed[m
+Author: citeChris <citechris.ng@gmail.com>
+Date:   Fri Jan 30 23:48:39 2026 +0000
+
+    build-an-event-flyer-page
+
+[33mcommit 264c35a6110ec0d139b36259198bdd1f9748e827[m
+Author: Isarael Ojo <citechris.ng@gmail.com>
+Date:   Tue Jan 27 18:24:15 2026 +0000
+
+    Update README.md
+
+[33mcommit 987894e3f25d2cb2764af5c45f17943a4d8e71a9[m
+Merge: 1f30c9b 4b6ca93
+Author: citeChris <citechris.ng@gmail.com>
+Date:   Sun Jan 25 17:47:15 2026 +0000
+
+    Merge branch 'main' of https://github.com/citeChris/100-days-of-code
+
+[33mcommit 1f30c9bd69f19284812b07f5a83a2e3dadc37d23[m
+Author: citeChris <citechris.ng@gmail.com>
+Date:   Sun Jan 25 17:45:19 2026 +0000
+
+    origin main
+
+[33mcommit 4b6ca93a9aab2b3f7363ff5cf545687c26f60812[m
+Author: Isarael Ojo <citechris.ng@gmail.com>
+Date:   Sun Jan 25 17:27:08 2026 +0000
+
+    Revise README for focus on web development skills
+
+[33mcommit ebc2da6b05d4a72a4553b4134723f32a1e741841[m
+Author: Isarael Ojo <citechris.ng@gmail.com>
+Date:   Tue Jan 6 22:05:38 2026 +0000
+
+    Update python_notes.md
+
+[33mcommit 39904f9812388be378bc07152ebed5ab26321d06[m
+Author: citeChris <citechris.ng@gmail.com>
+Date:   Tue Jan 6 21:59:18 2026 +0000
+
+    Day 2: documented Python variables and f-string theory
+
+[33mcommit 29873bc94fafd0f44f94f2e10779ae5462e29263[m
+Author: citeChris <citechris.ng@gmail.com>
+Date:   Tue Jan 6 05:20:16 2026 +0000
+
+    Update README.md
+
+[33mcommit 874dd0d36e442d34775cd0f0b042b981d492a525[m
+Author: citeChris <citechris.ng@gmail.com>
+Date:   Mon Jan 5 22:14:37 2026 +0000
+
+    Add initial README for Cyber Security journey
+
+[33mcommit f1df482fe496a407abd8600ba92aaf3d6cfe9a29[m
+Author: citeChris <citechris.ng@gmail.com>
+Date:   Mon Jan 5 21:52:09 2026 +0000
+
+    Day 1: Uploading my self html progress
