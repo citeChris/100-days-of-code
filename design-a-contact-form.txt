@@ -1,0 +1,59 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div class="form-container">
+    <form class="form-container">
+        <h2>Contact Form</h2>
+        <label for="text">Name: <input type="text" id="text" name="text" required /></label>
+        <label for="email">Email: <input type="email" id="email" name="email" required /></label>
+        <label for="area">Message: <textarea id="area" name="area" required></textarea></label>
+        <button type="submit" value="Submit">Submit</button>
+    </form>
+    </div>
+</body>
+
+</html>
+
+** end of index.html **
+
+** start of styles.css **
+
+.form-container {
+  background-color: aliceblue;
+  border-radius: 5px;
+  padding: 10px;
+  width: 80%;
+}
+
+label {
+  margin: 10px;
+  color: midnightblue;
+}
+
+input, textarea {
+  width: 300px;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+button {
+  background-color: midnightblue;
+  font-size: 1em;
+  color: aliceblue;
+}
+
+button:hover {
+  background-color: blue;
+}
+
+** end of styles.css **
+
