@@ -1,0 +1,30 @@
+** start of index.html **
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Rothko Painting</title>
+    <link href="./styles.css" rel="stylesheet">
+  </head>
+  <body>
+…  </body>
+</html>
+
+** end of index.html **
+** start of styles.css **
+S
+.canvas {
+  width: 500px;
+  height: 600px;
+  background-color: #4d0f00;
+  overflow: hidden;
+  filter: blur(2px);
+}
+
+.frame {
+  border: 50px solid black;
+…60px 12px;
+  transform: rotate(-0.2deg)
+}
+
+** end of styles.css **
