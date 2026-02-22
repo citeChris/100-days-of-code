@@ -1,0 +1,53 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Confidential Email</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <main id="email">
+    <div id="confidential">CONFIDENTIAL</div>
+    <div id="top-secret">TOP SECRET</div>
+    <p><span class="blurred">shades of blue</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quod, voluptates, quae, quos quibusdam dolorum quia nemo repudiandae quidem voluptatum quas. Quisquam quod, voluptates, quae, quos quibusdam dolorum quia nemo repudiandae quidem voluptatum quas.</p>
+    <p><span class="blurred">shades of blue</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quod, voluptates, quae, quos quibusdam dolorum quia nemo repudiandae quidem voluptatum quas. Quisquam quod, voluptates, quae, quos quibusdam dolorum quia nemo repudiandae quidem voluptatum quas.</p>
+    <p><span class="blurred">shades of blue</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quod, voluptates, quae, quos quibusdam dolorum quia nemo repudiandae quidem voluptatum quas. Quisquam quod, voluptates, quae, quos quibusdam dolorum quia nemo repudiandae quidem voluptatum quas.</p>
+    
+
+  </main>
+
+</body>
+
+</html>
+
+** end of index.html **
+
+** start of styles.css **
+
+#email {
+  padding: 50px;
+  margin: 50px;
+  width: 500px;
+  border: 2px;
+  box-sizing: border-box;
+}
+
+#confidential, #top-secret {
+  display: inline-block;
+  border: 2px solid cyan;
+  padding: 10px;
+  margin-left: 10px;
+  transform: rotate(45deg);
+}
+
+.blurred {
+  filter: blur(3px)
+}
+
+** end of styles.css **
+

@@ -1,0 +1,150 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pricing Plans</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h1>Pricing Plans</h1>
+
+<div class="pricing-container">
+
+    <div class="pricing-card basic-plan">
+        <h2>Basic</h2>
+        <p class="price">$9/month</p>
+        <hr />
+        <ul class="features">
+            <li><span class="check">✓</span> Access to our core features</li>
+            <li><span class="check">✓</span> Email support</li>
+            <li><span class="cross">X</span> Advanced analytics</li>
+            <li><span class="cross">X</span> Custom integrations</li>
+            <li><span class="cross">X</span> Priority support</li>
+        </ul>
+        <button class="plan-button">Choose Plan</button>
+    </div>
+
+    <div class="pricing-card pro-plan">
+        <h2>Pro</h2>
+        <p class="price">$19/month</p>
+        <hr />
+        <ul class="features">
+            <li><span class="check">✓</span> Access to our core features</li>
+            <li><span class="check">✓</span> Email support</li>
+            <li><span class="check">✓</span> Advanced analytics</li>
+            <li><span class="check">✓</span> Custom integrations</li>
+            <li><span class="cross">X</span> Priority support</li>
+        </ul>
+        <button class="plan-button">Choose Plan</button>
+    </div>
+
+    <div class="pricing-card premium-plan">
+        <h2>Premium</h2>
+        <p class="price">$29/month</p>
+        <hr />
+        <ul class="features">
+            <li><span class="check">✓</span> Access to our core features</li>
+            <li><span class="check">✓</span> Email support</li>
+            <li><span class="check">✓</span> Advanced analytics</li>
+            <li><span class="check">✓</span> Custom integrations</li>
+            <li><span class="check">✓</span> Priority support</li>
+        </ul>
+        <button class="plan-button">Choose Plan</button>
+    </div>
+
+</div>
+
+</body>
+</html>
+
+** end of index.html **
+
+** start of styles.css **
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.pricing-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.pricing-container:hover {
+    transform: scale(1.02);
+}
+
+.pricing-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    flex: 0 0 200px;
+    border: 2px solid black; 
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pricing-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2)
+}
+
+.pricing-card h2 {
+    margin: 0 0 5px 0;
+}
+
+.price {
+    margin: 0 0 10px 0;
+}
+
+.basic-plan { order: 0; }
+
+.pro-plan {
+    order: 1;
+    flex-grow: 2;
+}
+
+.premium-plan { order: 2; }
+
+.features {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.features li {
+    margin: 8px 0;
+}
+
+.check {
+    color: green;
+    font-weight: bold;
+    margin-right: 6px;
+}
+
+.cross {
+    color: red;
+    font-weight: bold;
+    margin-right: 6px;
+}
+
+.plan-button {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #f1c40f;
+    border-radius: 5px;
+}
+
+.plan-button:hover {
+    background-color: #d4ac0d;
+}
+
+** end of styles.css **
+
