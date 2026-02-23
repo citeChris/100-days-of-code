@@ -30,9 +30,10 @@ Even as a Junior Developer, I prioritize security by:
 - [x] HTML Basics
 - [x] CSS Flexbox & Grid
 - [ ] Responsive Web Design Principles
+- [ ] Python Programming
 - [ ] JavaScript Fundamentals (Next Goal!)
 
 ---
 **Let's Connect!**
 - **GitHub:** [@citeChris](https://github.com/citeChris)
-- **Current Status:** 100 Days of Code (Day 3+)
+- **Current Status:** 100 Days of Code (Day 60+)
