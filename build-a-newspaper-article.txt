@@ -1,0 +1,90 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Newspaper Article</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="newspaper">
+    
+    <div class="name">The Daily Developer</div>
+    <div class="date">October 24, 2023</div>
+    
+    <div class="headline">CSS Grid Conquers The Web</div>
+    <div class="sub-headline">Developers rejoice as layout headaches become a thing of the past.</div>
+    
+    <div class="author">Jane Doe</div>
+    
+    <p class="text">
+      In a stunning turn of events, developers around the world have universally agreed that modern CSS layout tools are fantastic. Gone are the days of float-based layouts and complex clear-fixes. The new era is here, and it is responsive by default.
+    </p>
+    
+    <p class="text">
+      Experts predict that this will lead to a 500% increase in productivity and a significant decrease in keyboard-smashing incidents. The web design community is looking forward to a bright, perfectly-aligned future.
+    </p>
+    
+  </div>
+
+</body>
+</html>
+
+** end of index.html **
+
+** start of styles.css **
+
+/* Sets the root font-size of the HTML document to 24px */
+html {
+  font-size: 24px;
+}
+
+/* The parent element containing everything */
+.newspaper {
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* Twice the root element's font-size (2rem = 2 * 24px = 48px) */
+.name {
+  font-size: 2rem; 
+  font-family: "Times New Roman", serif;
+  text-transform: uppercase;
+}
+
+/* Twice its parent's font-size (2em = 2 * 16px = 32px) and bold */
+.headline {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+/* Weight of 100, 1.5 times parent's font-size, and italicized */
+.sub-headline {
+  font-weight: 100;
+  font-size: 1.5em; 
+  font-style: italic;
+}
+
+/* Uppercase and bold */
+.author {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* Text indent, and line-height twice the parent's font-size */
+.text {
+  text-indent: 20px;
+  line-height: 2em; 
+}
+
+/* First letter styling: bold and twice parent's font-size */
+.text::first-letter {
+  font-weight: bold;
+  font-size: 2em;
+}
+
+** end of styles.css **
+

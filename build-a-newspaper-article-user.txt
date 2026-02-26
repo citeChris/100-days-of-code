@@ -1,0 +1,116 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Newspaper Article - My Journey</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="newspaper">
+    
+    <div class="name">The Tech Times</div>
+    <div class="date">February 26, 2026</div>
+    
+    <div class="headline">Rising Tech Star Targets Junior Dev Role</div>
+    <div class="sub-headline">Mastering HTML and Python simultaneously proves to be a winning strategy.</div>
+    
+    <div class="author">By Lead Correspondent</div>
+    
+    <p class="text">
+      In an impressive display of dedication, a local developer is making waves by tackling frontend development and Python at the exact same time. Industry experts confirm that building a strong foundation in HTML while learning backend logic is a brilliant move for anyone entering the tech industry.
+    </p>
+    
+    <p class="text">
+      While the immediate plan is to secure a junior software developer position to gain hands-on, entry-level experience, the ultimate endgame is highly ambitious. Sources close to the developer confirm that these foundational skills are stepping stones toward a future career as a Cyber Security Analyst. The cybersecurity world better get ready.
+    </p>
+    
+  </div>
+
+</body>
+</html>
+
+** end of index.html **
+
+** start of styles.css **
+
+html {
+  font-size: 24px;
+  background-color: #f4f1ea; 
+}
+
+.newspaper {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap: 20px; 
+}
+
+.name, .date, .headline, .sub-headline, .author {
+  grid-column: span 2;
+  border-bottom: 1px solid #333;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.name {
+  font-size: 2rem; 
+  font-family: "Times New Roman", serif;
+  text-transform: uppercase;
+  text-align: center;
+  border-bottom: 4px double #333; 
+}
+
+.date {
+  text-align: center;
+  font-weight: bold;
+}
+
+.headline {
+  font-size: 2em;
+  font-weight: bold;
+  line-height: 1.1;
+  border: none;
+}
+
+.sub-headline {
+  font-weight: 100;
+  font-size: 1.5em; 
+  font-style: italic;
+  color: #444;
+  border: none;
+}
+
+.author {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.8em;
+}
+
+.text {
+  text-indent: 20px;
+  line-height: 2em;
+  margin: 0;
+  text-align: justify; 
+}
+
+.text::first-letter {
+  font-weight: bold;
+  font-size: 2em;
+  float: left;
+  margin-right: 8px;
+  line-height: 1;
+}
+
+** end of styles.css **
+
