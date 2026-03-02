@@ -1,0 +1,101 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alan Turing Tribute</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <main id="main">
+    
+    <h1 id="title">Alan Turing</h1>
+    <p>The pioneer of theoretical computer science and artificial intelligence</p>
+
+    <figure id="img-div">
+      <img id="image" src="https://upload.wikimedia.org/wikipedia/commons/a/a1/Alan_Turing_Aged_16.jpg" alt="A young Alan Turing">
+      
+      <figcaption id="img-caption">
+        Alan Turing, whose brilliant mind cracked the German Enigma code, laying the groundwork for modern computer science and cryptography.
+      </figcaption>
+    </figure>
+
+    <section id="tribute-info">
+      <h3>A Brief Timeline of Turing's Impact:</h3>
+      <ul>
+        <li><strong>1936:</strong> Published "On Computable Numbers," introducing the theoretical Turing machine.</li>
+        <li><strong>1939-1945:</strong> Worked at Bletchley Park, building the Bombe machine to decrypt Enigma messages.</li>
+        <li><strong>1950:</strong> Developed the "Turing Test" to determine if a machine can demonstrate human intelligence.</li>
+      </ul>
+      
+      <p>
+        To learn more about his incredible contributions to the field of computer science, check out his 
+        <a id="tribute-link" href="https://en.wikipedia.org/wiki/Alan_Turing" target="_blank">Wikipedia entry</a>.
+      </p>
+    </section>
+
+  </main>
+
+</body>
+</html>
+
+** end of index.html **
+
+** start of styles.css **
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f6f7;
+  color: #1a1a1a;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+#main {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto; 
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Story 8 & 9: Responsive and centered image.
+   This is the most common place beginners get stuck! 
+*/
+#image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+#img-caption {
+  margin-top: 15px;
+  font-style: italic;
+  font-size: 0.9rem;
+  color: #555555;
+}
+
+#tribute-info {
+  text-align: left; 
+  margin-top: 40px;
+  padding: 0 20px;
+  line-height: 1.6;
+}
+
+ul {
+  max-width: 550px;
+  margin: 0 auto 30px auto;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+** end of styles.css **
+
