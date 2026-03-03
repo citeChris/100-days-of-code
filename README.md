@@ -30,8 +30,8 @@ Even as a Junior Developer, I prioritize security by:
 - [x] HTML Basics
 - [x] CSS Flexbox & Grid
 - [ ] Responsive Web Design Principles
-- [ ] Python Programming
 - [ ] JavaScript Fundamentals (Next Goal!)
+- [ ] Python programming 
 
 ---
 **Let's Connect!**
