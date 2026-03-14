@@ -1,0 +1,191 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Python Basics Documentation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav id="navbar">
+    <header>Python Basics</header>
+    <ul>
+      <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+      <li><a class="nav-link" href="#Variables">Variables</a></li>
+      <li><a class="nav-link" href="#Data_Types">Data Types</a></li>
+      <li><a class="nav-link" href="#Loops">Loops</a></li>
+      <li><a class="nav-link" href="#Functions">Functions</a></li>
+    </ul>
+  </nav>
+
+  <main id="main-doc">
+    
+    <section class="main-section" id="Introduction">
+      <header>Introduction</header>
+      <p>Python is a high-level, general-purpose programming language. Its design philosophy emphasizes code readability.</p>
+      <p>It supports multiple programming paradigms, including structured, object-oriented, and functional programming.</p>
+      <code>print("Hello, World!")</code>
+    </section>
+
+    <section class="main-section" id="Variables">
+      <header>Variables</header>
+      <p>Variables are containers for storing data values. Python has no command for declaring a variable upfront.</p>
+      <p>A variable is created the moment you first assign a value to it. This makes the syntax very fast to write.</p>
+      <code>x = 5</code>
+      <code>y = "John"</code>
+    </section>
+
+    <section class="main-section" id="Data_Types">
+      <header>Data Types</header>
+      <p>Variables can store data of different types, and different types can do different things seamlessly.</p>
+      <p>Python has the following data types built-in by default:</p>
+      <ul>
+        <li>Text Type: str</li>
+        <li>Numeric Types: int, float, complex</li>
+        <li>Sequence Types: list, tuple, range</li>
+        <li>Mapping Type: dict</li>
+        <li>Boolean Type: bool</li>
+      </ul>
+      <p>You can get the data type of any object by using the type() function.</p>
+      <code>print(type(x))</code>
+    </section>
+
+    <section class="main-section" id="Loops">
+      <header>Loops</header>
+      <p>Python has two primitive loop commands that control flow.</p>
+      <p>These are the while loops and for loops.</p>
+      <p>With the while loop we can execute a set of statements as long as a condition is true.</p>
+      <code>
+while i < 6:
+  print(i)
+      </code>
+    </section>
+
+    <section class="main-section" id="Functions">
+      <header>Functions</header>
+      <p>A function is a block of code which only runs when it is called directly.</p>
+      <p>You can pass data, known as parameters, into a function for it to process.</p>
+      <p>In Python a function is defined using the def keyword.</p>
+      <code>
+def my_function():
+  print("Hello from a function")
+      </code>
+    </section>
+
+  </main>
+</body>
+</html>
+
+** end of index.html **
+
+** start of styles.css **
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #fcfcfc;
+  color: #333;
+}
+
+
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background-color: #f4f4f4;
+  border-right: 2px solid #ddd;
+  overflow-y: auto;
+}
+
+#navbar header {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 2px solid #ddd;
+}
+
+#navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#navbar li {
+  border-bottom: 1px solid #bbb;
+}
+
+.nav-link {
+  display: block;
+  padding: 15px 20px;
+  text-decoration: none;
+  color: #444;
+}
+
+.nav-link:hover {
+  background-color: #e4e4e4;
+}
+
+#main-doc {
+  margin-left: 270px; 
+  /* Provides space for the fixed left navbar */
+  padding: 30px;
+  max-width: 800px;
+}
+
+.main-section {
+  margin-bottom: 40px;
+}
+
+.main-section header {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+code {
+  display: block;
+  background-color: #eaeaea;
+  padding: 15px;
+  border-radius: 5px;
+  margin: 15px 0;
+  font-family: "Courier New", Courier, monospace;
+  white-space: pre-wrap;
+}
+
+ul {
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
+
+/* Responsive Layout - Media Query */
+@media (max-width: 800px) {
+  #navbar {
+    position: static;
+    width: 100%;
+    height: auto;
+    border-right: none;
+    border-bottom: 3px solid #ccc;
+    max-height: 250px;
+  }
+  
+  #main-doc {
+    margin-left: 0; 
+    padding: 20px;
+  }
+}
+
+** end of styles.css **
+
