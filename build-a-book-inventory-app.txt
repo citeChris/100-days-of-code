@@ -1,0 +1,162 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Book Inventory</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Book Inventory</h1>
+  
+  <table>
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Author</th>
+        <th>Category</th>
+        <th>Status</th>
+        <th>Rate</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="read">
+        <td>The Hobbit</td>
+        <td>J.R.R. Tolkien</td>
+        <td>Fantasy</td>
+        <td><span class="status">Read</span></td>
+        <td>
+          <span class="rate three">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </td>
+      </tr>
+      
+      <tr class="to-read">
+        <td>1984</td>
+        <td>George Orwell</td>
+        <td>Sci-Fi</td>
+        <td><span class="status">To Read</span></td>
+        <td>
+          <span class="rate">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </td>
+      </tr>
+      
+      <tr class="in-progress">
+        <td>Dune</td>
+        <td>Frank Herbert</td>
+        <td>Sci-Fi</td>
+        <td><span class="status">In Progress</span></td>
+        <td>
+          <span class="rate">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </td>
+      </tr>
+      
+      <tr class="read">
+        <td>Foundation</td>
+        <td>Isaac Asimov</td>
+        <td>Sci-Fi</td>
+        <td><span class="status">Read</span></td>
+        <td>
+          <span class="rate one">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </td>
+      </tr>
+
+      <tr class="read">
+        <td>Neuromancer</td>
+        <td>William Gibson</td>
+        <td>Sci-Fi</td>
+        <td><span class="status">Read</span></td>
+        <td>
+          <span class="rate two">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
+
+** end of index.html **
+
+** start of styles.css **
+
+span {
+  display: inline-block;
+}
+
+tr[class="read"] {
+  background-image: linear-gradient(to right, #f8f9fa, #e9ecef);
+}
+
+tr[class="to-read"] {
+  background-image: linear-gradient(to right, #e3f2fd, #bbdefb);
+}
+
+tr[class="in-progress"] {
+  background-image: linear-gradient(to right, #fff3e0, #ffe0b2);
+}
+
+tr[class="to-read"] span[class="status"] {
+  border: 1px solid #1976d2;
+  background-image: linear-gradient(#2196f3, #1976d2);
+}
+
+tr[class="read"] span[class="status"] {
+  border: 1px solid #388e3c;
+  background-image: linear-gradient(#4caf50, #388e3c);
+}
+
+tr[class="in-progress"] span[class="status"] {
+  border: 1px solid #f57c00;
+  background-image: linear-gradient(#ff9800, #f57c00);
+}
+
+span[class="status"], 
+span[class^="rate"] {
+  height: 25px;
+  width: 100px;
+  padding: 5px;
+}
+
+span[class^="rate"] > span {
+  border: 1px solid black;
+  border-radius: 50%;
+  margin: 2px;
+  height: 15px;
+  width: 15px;
+  background-color: white;
+}
+
+span[class~="one"] span:first-child {
+  background-image: linear-gradient(red, darkred);
+}
+
+span[class~="two"] span:nth-child(-n+2) {
+  background-image: linear-gradient(gold, darkgoldenrod);
+}
+
+span[class~="three"] span {
+  background-image: linear-gradient(green, darkgreen);
+}
+
+** end of styles.css **
+
