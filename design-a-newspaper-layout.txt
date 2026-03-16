@@ -1,0 +1,78 @@
+** start of index.html **
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Newspaper Layout</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="newspaper-layout">
+    
+    <header class="title">
+      <h1>The Developer Times</h1>
+    </header>
+    
+    <article class="feature-article">
+      <h2>Grid Layouts Save the Day</h2>
+      <p>This is the main breaking news story of the day detailing the power of CSS Grid.</p>
+    </article>
+    
+    <figure class="cover-image">
+      <img src="https://via.placeholder.com/400x600" alt="Cover story graphic">
+    </figure>
+
+    <article class="secondary-article">
+      <h2>Tech Industry Updates</h2>
+      <p>This is an additional news section with more information on recent trends.</p>
+    </article>
+
+    <article class="small-article1">
+      <h3>Local News</h3>
+      <p>Details about the first smaller local story.</p>
+    </article>
+
+    <article class="small-article2">
+      <h3>Sports</h3>
+      <p>Details about the latest scores and games.</p>
+    </article>
+
+    <article class="small-article3">
+      <h3>Weather</h3>
+      <p>Forecast for the upcoming week in your area.</p>
+    </article>
+
+  </main>
+</body>
+</html>
+
+**end of index.html **
+** start of styles.css **
+
+.title { grid-area: title; }
+.feature-article { grid-area: feature-article; }
+.secondary-article { grid-area: secondary-article; }
+.cover-image { grid-area: cover-image; }
+.small-article1 { grid-area: small-article1; }
+.small-article2 { grid-area: small-article2; }
+.small-article3 { grid-area: small-article3; }
+
+.newspaper-layout {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto 1fr 1fr 1fr;S
+  grid-template-areas: 
+    "title title title"
+    "feature-article feature-article cover-image"
+    "secondary-article secondary-article cover-image"
+    "small-article1 small-article2 small-article3";
+  gap: 20px; 
+}
+
+.cover-image img {
+  max-width: 100%;
+  height: auto;
+  display: block; 
+}
+
+** end of styles.css **
