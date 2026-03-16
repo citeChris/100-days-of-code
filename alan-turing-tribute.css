@@ -27,7 +27,7 @@ body {
   margin-top: 15px;
   font-style: italic;
   font-size: 0.9rem;
-  color: #8b0000; /* Darker red for better contrast on light green */
+  color: #ff0000; /* Darker red for better contrast on light green */
 }
 
 #tribute-info {
