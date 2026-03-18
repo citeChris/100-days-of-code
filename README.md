@@ -29,11 +29,12 @@ Even as a Junior Developer, I prioritize security by:
 ## 📈 Learning Roadmap
 - [x] HTML Basics
 - [x] CSS Flexbox & Grid
-- [ ] Responsive Web Design Principles
+- [x] Responsive Web Design Principles
 - [ ] JavaScript Fundamentals (Next Goal!)
 - [ ] Python programming 
 
 ---
 **Let's Connect!**
 - **GitHub:** [@citeChris](https://github.com/citeChris)
-- **Current Status:** 100 Days of Code (Day 70+)
+- **LinkedIn:** [Isarael Ojo](https://www.linkedin.com/in/isaraelojo-dev)
+- **Current Status:** 100 Days of Code (Day 80+)
