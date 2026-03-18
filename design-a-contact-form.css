@@ -1,0 +1,27 @@
+.form-container {
+  background-color: aliceblue;
+  border-radius: 5px;
+  padding: 10px;
+  width: 80%;
+}
+
+label {
+  margin: 10px;
+  color: midnightblue;
+}
+
+input, textarea {
+  width: 300px;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+button {
+  background-color: midnightblue;
+  font-size: 1em;
+  color: aliceblue;
+}
+
+button:hover {
+  background-color: blue;
+}

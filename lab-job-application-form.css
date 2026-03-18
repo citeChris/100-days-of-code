@@ -1,0 +1,71 @@
+body { 
+    font-family: sans-serif;         
+    padding: 20px;
+
+}
+.container { 
+    max-width: 500px; 
+    margin: 0 auto; 
+}
+form { 
+    display: flex; 
+    flex-direction: column; 
+    gap: 10px; 
+}
+label { 
+    margin-bottom: 5px; 
+    font-weight: bold; 
+}
+
+input:focus, textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+input:invalid, select:invalid, textarea:invalid {
+    border: 2px solid red;
+}
+
+input:valid, select:valid, textarea:valid {
+    border: 2px solid green;
+}
+
+button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    max-width: 200px;
+}
+
+button:hover {
+    background-color: #0056b3; 
+}
+
+input:first-of-type {
+    background-color: aliceblue; 
+    border-radius: 5px;
+}
+
+.radio-group input[type="radio"] {
+    appearance: none; 
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid gray;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.radio-group input[type="radio"]:checked {
+    border-color: #007bff;
+    background-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.radio-group input[type="radio"]:checked + label {
+    color: #007bff;
+    font-weight: bold;
+}

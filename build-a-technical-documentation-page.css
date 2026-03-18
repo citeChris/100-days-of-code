@@ -1,0 +1,103 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #fcfcfc;
+  color: #333;
+}
+
+
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background-color: #f4f4f4;
+  border-right: 2px solid #ddd;
+  overflow-y: auto;
+}
+
+#navbar header {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 2px solid #ddd;
+}
+
+#navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#navbar li {
+  border-bottom: 1px solid #bbb;
+}
+
+.nav-link {
+  display: block;
+  padding: 15px 20px;
+  text-decoration: none;
+  color: #444;
+}
+
+.nav-link:hover {
+  background-color: #e4e4e4;
+}
+
+#main-doc {
+  margin-left: 270px; 
+  /* Provides space for the fixed left navbar */
+  padding: 30px;
+  max-width: 800px;
+}
+
+.main-section {
+  margin-bottom: 40px;
+}
+
+.main-section header {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+code {
+  display: block;
+  background-color: #eaeaea;
+  padding: 15px;
+  border-radius: 5px;
+  margin: 15px 0;
+  font-family: "Courier New", Courier, monospace;
+  white-space: pre-wrap;
+}
+
+ul {
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
+
+/* Responsive Layout - Media Query */
+@media (max-width: 800px) {
+  #navbar {
+    position: static;
+    width: 100%;
+    height: auto;
+    border-right: none;
+    border-bottom: 3px solid #ccc;
+    max-height: 250px;
+  }
+  
+  #main-doc {
+    margin-left: 0; 
+    padding: 20px;
+  }
+}

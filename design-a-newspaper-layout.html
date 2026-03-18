@@ -1,10 +1,10 @@
-** start of index.html **
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Newspaper Layout</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="design-a-newspaper-layout.css">
 </head>
 <body>
   <main class="newspaper-layout">
@@ -45,34 +45,3 @@
   </main>
 </body>
 </html>
-
-**end of index.html **
-** start of styles.css **
-
-.title { grid-area: title; }
-.feature-article { grid-area: feature-article; }
-.secondary-article { grid-area: secondary-article; }
-.cover-image { grid-area: cover-image; }
-.small-article1 { grid-area: small-article1; }
-.small-article2 { grid-area: small-article2; }
-.small-article3 { grid-area: small-article3; }
-
-.newspaper-layout {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto 1fr 1fr 1fr;S
-  grid-template-areas: 
-    "title title title"
-    "feature-article feature-article cover-image"
-    "secondary-article secondary-article cover-image"
-    "small-article1 small-article2 small-article3";
-  gap: 20px; 
-}
-
-.cover-image img {
-  max-width: 100%;
-  height: auto;
-  display: block; 
-}
-
-** end of styles.css **

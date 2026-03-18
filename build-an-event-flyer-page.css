@@ -1,0 +1,20 @@
+body {
+    padding: 50px 0;
+    margin: 0 auto;
+    width: 80vw;
+  /* min-height = 100vh - (top padding + bottom padding) */
+    /* 50px + 50px = 100px */
+    min-height: calc(100vh - 100px);
+    font-family: sans-serif;
+}
+
+/* Set width of hr and section relative to parent (body/main) */
+hr, section {
+    width: 90%;
+    margin: 20px auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}

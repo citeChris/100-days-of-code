@@ -1,12 +1,10 @@
-** start of index.html **
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Earth and Moon Orbit</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="build-a-moon-orbit.css">
 </head>
 <body>
   <div class="space">
@@ -17,82 +15,3 @@
   </div>
 </body>
 </html>
-
-** end of index.html **
-
-** start of styles.css **
-
-/* 1. Center everything on the page using Flexbox */
-body {
-  margin: 0;
-  height: 100vh; /* 100% of the viewport height */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #111; /* Dark background to look like space */
-}
-
-/* 2. Container for the animation */
-.space {
-  position: relative;
-  width: 200px;
-  height: 200px;
-}
-
-/* 3. The Earth */
-.earth {
-  position: absolute;
-  width: 100px;
-  height: 100px;
-  background-color: #2b82c9; /* Earth blue */
-  border-radius: 50%;
-  
-  /* Center within the parent */
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-/* 4. The Orbit Path */
-.orbit {
-  position: absolute;
-  width: 200px;
-  height: 200px;
-  border-radius: 50%; /* Makes the path a circle */
-  
-  /* Center within the parent */
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  
-  /* Apply the animation */
-  animation: orbit 5s linear infinite;
-}
-
-/* 5. The Moon */
-.moon {
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  background-color: #d3d3d3; /* Moon gray */
-  border-radius: 50%;
-  
-  /* Position at the top and center horizontally */
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%); 
-}
-
-/* 6. The Animation Keyframes */
-@keyframes orbit {
-  0% {
-    /* We must include the translate(-50%, -50%) so it stays centered while rotating */
-    transform: rotate(0deg) translate(-50%, -50%);
-  }
-  100% {
-    transform: rotate(360deg) translate(-50%, -50%);
-  }
-}
-
-** end of styles.css **
-

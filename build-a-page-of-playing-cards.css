@@ -1,0 +1,64 @@
+body {
+    background-color: #1e5631; /* Felt green */
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+#playing-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background-color: #fdfdfd;
+    width: 160px;
+    height: 240px;
+    border-radius: 12px;
+    box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.4);
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-15px);
+}
+
+.heart, .diamond {
+    color: #d32f2f; 
+}
+.spade, .clubs {
+    color: #111111; 
+}
+
+.left {
+    align-self: flex-start;
+    text-align: center;
+    line-height: 1.1;
+}
+
+.right {
+    align-self: flex-end;
+    text-align: center;
+    line-height: 1.1;
+    transform: rotate(180deg); 
+}
+
+.middle {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px; 
+}
