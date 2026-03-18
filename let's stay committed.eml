@@ -1,0 +1,174 @@
+Delivered-To: citechris.ng@gmail.com
+Received: by 2002:ab4:ac03:0:b0:2c8:6df9:f262 with SMTP id fx3csp43060ecb;
+        Tue, 17 Mar 2026 21:07:01 -0700 (PDT)
+X-Received: by 2002:a17:903:41d1:b0:2b0:4eeb:f800 with SMTP id d9443c01a7336-2b06e3cd9f8mr20853745ad.33.1773806821127;
+        Tue, 17 Mar 2026 21:07:01 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1773806821; cv=none;
+        d=google.com; s=arc-20240605;
+        b=d2geVj6K0DBCeKB/rMTFNQToHe7Z0Wrl491aHqcpXXButfi/1Hp4d9YFfzBYkGQv2H
+         JflNUYPVEfklCrrgvWVYwXGJRCLYjpN8A88qn82/RnowDbG/LKnMeOL3o6DcZqOaTkeI
+         OtbcgssZmzt0PQpwy9a/mYEo2DEaCJKEPGP9op7YuipJNoqj05LTdDR1yy4sPDhKckN/
+         uI6Mg4qP4UurrT3l2/IdBbEpSXAlhqF7UMloX9Db1MX9lEe+KRrl0yFd03yX+sa2jIZN
+         Z74fMJbQBXuPiNQS0aZO96ybghj7udFY3qG8IHYqBDJRRGTVaU0dUNjVcuE3OHLObn/3
+         MUNw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=feedback-id:date:message-id:content-transfer-encoding:mime-version
+         :subject:to:from:dkim-signature:dkim-signature;
+        bh=eeq6/P3CQQ7Bbb5TKMRElcrMpv56VfRvV8ubi/cUJDc=;
+        fh=dip6u3YqD9qEP+0Tw28hRdYMFQG6Qb1OMQsWgNUO73o=;
+        b=Sn2rkuKA/smsgkDbOOMtwzOe1T9Q1S5+xrrhYMUd9zRaOJgVBPCqn+qWQ7928NQz3w
+         C9v93y40GUd3QnxnAJX1rsDl+WpcYZP7+MiWOdnDyWs9MiMpnj2JieI+XDmBN2lyoqCV
+         vHFmtO/w/U6gvsvZd1F/86u2544Plhjm6S5HYGWJJhD/+deLA2yHEb4VfOME5rqEkA0X
+         r4ALEYTqkh6DZYdTw3YRcuOI7FgLZ1B3DRmGtV4lEDPoxVBbE7CUPJX0hzrcnyXGgkrQ
+         6ZeB04WfpTFRek/oPYUDIl4o1P7BHbBfOxjRaZhDKUZ8k21TCY4wzj+4CZnUatLYvSRX
+         Z04A==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@trellobutler.com header.s=3bsazidbal4chrddqxxod7t5ct5egc7c header.b="N/X2Zq9D";
+       dkim=pass header.i=@amazonses.com header.s=hsbnp7p3ensaochzwyq5wwmceodymuwv header.b=bRriJIfG;
+       spf=pass (google.com: domain of 0101019cff201c96-cf120681-73b5-4eca-9eb1-5a6dc684724b-000000@bot.trellobutler.com designates 54.240.27.75 as permitted sender) smtp.mailfrom=0101019cff201c96-cf120681-73b5-4eca-9eb1-5a6dc684724b-000000@bot.trellobutler.com
+Return-Path: <0101019cff201c96-cf120681-73b5-4eca-9eb1-5a6dc684724b-000000@bot.trellobutler.com>
+Received: from a27-75.smtp-out.us-west-2.amazonses.com (a27-75.smtp-out.us-west-2.amazonses.com. [54.240.27.75])
+        by mx.google.com with ESMTPS id d9443c01a7336-2b06e431884si26748925ad.21.2026.03.17.21.07.00
+        for <citechris.ng@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Tue, 17 Mar 2026 21:07:01 -0700 (PDT)
+Received-SPF: pass (google.com: domain of 0101019cff201c96-cf120681-73b5-4eca-9eb1-5a6dc684724b-000000@bot.trellobutler.com designates 54.240.27.75 as permitted sender) client-ip=54.240.27.75;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@trellobutler.com header.s=3bsazidbal4chrddqxxod7t5ct5egc7c header.b="N/X2Zq9D";
+       dkim=pass header.i=@amazonses.com header.s=hsbnp7p3ensaochzwyq5wwmceodymuwv header.b=bRriJIfG;
+       spf=pass (google.com: domain of 0101019cff201c96-cf120681-73b5-4eca-9eb1-5a6dc684724b-000000@bot.trellobutler.com designates 54.240.27.75 as permitted sender) smtp.mailfrom=0101019cff201c96-cf120681-73b5-4eca-9eb1-5a6dc684724b-000000@bot.trellobutler.com
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=3bsazidbal4chrddqxxod7t5ct5egc7c; d=trellobutler.com;
+	t=1773806820;
+	h=From:To:Subject:MIME-Version:Content-Type:Content-Transfer-Encoding:Message-ID:Date;
+	bh=W79dbcpdDC2zjPPuxxCqm+eAa1bx1hV4nEJqP/Klpac=;
+	b=N/X2Zq9D1ob36Hjv6FAD5bE9S0Qlhdw+kUW6kaCEER2nnad9GAHVfl8jfgmo8lb5
+	zMWdxkRULS9nkmDYFqdHP/aKkdfwNkF7luu3+FS9/WUnbI6IacNHqKZ2dynKT9tFh62
+	+qhp1w+xCOlsC/u7QRPMaMgyF1qCMjU5iClPjcuY=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=hsbnp7p3ensaochzwyq5wwmceodymuwv; d=amazonses.com; t=1773806820;
+	h=From:To:Subject:MIME-Version:Content-Type:Content-Transfer-Encoding:Message-ID:Date:Feedback-ID;
+	bh=W79dbcpdDC2zjPPuxxCqm+eAa1bx1hV4nEJqP/Klpac=;
+	b=bRriJIfGgofGKPxpCoFyN0a0Gf0OVcAZ8poc6WoBN6AVcdDivB79czZovgmSu+RD
+	5iMECQcY3R+PX1y0Lyl5y+qlLjvkp/BOmh61Ddhc5KrNrgE4UHQ3b2801WG0/ZL+QRd
+	h4DWDRhCXqeNLfCPCNyPGdD4YD/26ZvCWQC/blD4=
+From: isaraelojo-noreply@trellobutler.com
+To: citechris.ng@gmail.com
+Subject: let's stay committed
+MIME-Version: 1.0
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+Message-ID: <0101019cff201c96-cf120681-73b5-4eca-9eb1-5a6dc684724b-000000@us-west-2.amazonses.com>
+Date: Wed, 18 Mar 2026 04:07:00 +0000
+Feedback-ID: ::1.us-west-2.YcVigYX0jfSb5ilFs0Vq1AcqXVQDA31MVppzSAHNADA=:AmazonSES
+X-SES-Outgoing: 2026.03.18-54.240.27.75
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<meta charset="utf-8"/>
+		<style>
+			* {
+				font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Noto Sans", "Ubuntu", "Droid Sans", "Helvetica Neue", sans-serif;
+				color: #172B4D;
+			}
+
+			body {
+				background-color: #FFFFFF;
+			}
+
+			#emailBody {
+				margin: 40px auto;
+				max-width: 600px;
+			}
+
+			.detailsText {
+				font-size: 12px;
+				line-height: 16px;
+				color: #5E6C84;
+			}
+
+			.detailsText a {
+				color: inherit;
+			}
+
+			#header {
+				text-align: center;
+				margin-bottom: 28px;
+			}
+
+			#header-logo-image {
+				width: 140px;
+			}
+
+			#message {
+				font-size: 14px;
+				line-height: 20px;
+				margin-bottom: 48px;
+			}
+
+			#message-content > p, h1, h2, h3, h4, h5, h6, li {
+				white-space: pre-wrap;
+			}
+
+			.footer {
+				font-size: 12px;
+				line-height: 16px;
+				color: #5E6C84;		
+			}
+			
+			.footer a {
+				color: inherit;
+			}
+
+			.footer span {
+				color: inherit;
+			}
+
+			@media only screen and (max-width: 670px) {
+				#emailBody {
+					width: 85% !important;
+					padding: 12px 0;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<!--[if mso]>
+    <table id="emailBody" align="center" cellpadding="0" cellspacing="0" border="0" width="600" style="width: 600px;">
+		<![endif]-->
+    <!--[if !mso]>-->
+    <table id="emailBody" align="center" cellpadding="0" cellspacing="0" border="0">
+    <!--<![endif]-->
+			<thead>
+				<td id="header">
+					<div>
+						<img id="header-logo-image" width="140" src="https://trello.com/images/logo-new-sm.png"/>
+					</div>
+					<span class="detailsText">
+							Want to get the details? <a href="https:&#x2F;&#x2F;trello.com&#x2F;b&#x2F;L5f7FcIM&#x2F;my-schedule">Go to Trello</a>
+					</span>
+				</td>
+			</thead>
+			<tbody>
+				<tr>
+					<td id="message">
+						<div id="message-content">
+							<p><!--EMAIL_MESSAGE--></p>
+<p>&quot;I will commit to transitioning from leisure activities to focused work, dedicating my energy and effort to achieving my goals and advancing in my professional endeavors.&quot;</p>						</div>
+						<table align="center" cellpadding="0" cellspacing="0" border="0">
+							<tr>
+								<td class="footer">
+										This email notification was set up via automation by Isarael Ojo. Didn't sign up for this email? <a href="https:&#x2F;&#x2F;api.butlerfortrello.com&#x2F;email-report&#x2F;XuBqyzCLzVd2?action&#x3D;report" target="_blank">Click here</a> to unsubscribe and block emails from @isaraelojo.<br>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</body>
+</html>
+  
