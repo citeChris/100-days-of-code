@@ -1,6 +1,6 @@
 # 🛡️ 100 Days of Code: Becoming a Skilled Coder
 
-### Isarael (citeChris) Ojo | Entry-Level Software Developer
+## Isarael (citeChris) Ojo | Entry-Level Software Developer
 
 Welcome to my learning journal! This repo tracks my journey through
 **freeCodeCamp's Responsive Web Design** certification and beyond.
@@ -18,7 +18,7 @@ Welcome to my learning journal! This repo tracks my journey through
 
 ## 🛠️ Tech Stack
 
-- **Languages:** HTML5, CSS3, Python (learning JavaScript next)
+- **Languages:** HTML5, CSS3, Python, Relational Databases - SQL in progress, (learning JavaScript next)
 - **Tools:** VS Code, Git, GitHub
 - **Learning:** freeCodeCamp, The Odin Project, javascript.info
 - **Learning Hub:** American Corner Ibadan, Jericho 🇳🇬  
@@ -73,6 +73,8 @@ Even as a junior developer, I prioritize security:
 - ✅ Responsive Web Design
 - ✅ Python Fundamentals
 - 🔄 JavaScript (in progress)
+- 🔄 in progress SQL (relational databases course)
+- ⏳ Flask next after JS
 - ⏳ SecureVault (capstone)
 
 ---
