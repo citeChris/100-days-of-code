@@ -1,40 +1,82 @@
 # 🛡️ 100 Days of Code: Becoming a Skilled Coder
-### Junior Developer Portfolio | HTML & CSS Focus
 
-Welcome to my collection of responsive web development projects! This repository tracks my journey through **freeCodeCamp's Responsive Web Design** certification and beyond.
+### Isarael (citeChris) Ojo | Entry-Level Software Developer
 
-## 🚀 Goals
-- Master **Semantic HTML5** for accessibility and SEO.
-- Implement **Mobile-First Design** using CSS Flexbox and Grid.
-- Build projects with a **Security-First** mindset (Secure Coding).
-
-## 🛠️ Tech Stack
-- **Languages:** HTML5, CSS3
-- **Frameworks/Libraries:** (e.g., Bootstrap or Tailwind)
-- **Tools:** VS Code, Git, GitHub
-- **Learning Hub:** American Corner Ibadan (Jericho) 🇳🇬
-
-## 📂 Featured Projects
-| Project Name | Description | Link |
-| :--- | :--- | :--- |
-| **Tribute Page** | A responsive landing page using clean CSS. | [Live Demo](#) |
-| **Survey Form** | A structured form focusing on input validation. | [Live Demo](#) |
-
-## 🛡️ Secure Coding Practices
-Even as a Junior Developer, I prioritize security by:
-1. **Input Sanitization:** Ensuring form inputs are restricted to expected data types.
-2. **Semantic HTML:** Using proper tags to prevent structure-based vulnerabilities.
-3. **HTTPS Awareness:** Preparing all projects for secure deployment.
-
-## 📈 Learning Roadmap
-- [x] HTML Basics
-- [x] CSS Flexbox & Grid
-- [x] Responsive Web Design Principles
-- [ ] JavaScript Fundamentals (Next Goal!)
-- [ ] Python programming 
+Welcome to my learning journal! This repo tracks my journey through
+**freeCodeCamp's Responsive Web Design** certification and beyond.
 
 ---
-**Let's Connect!**
-- **GitHub:** [@citeChris](https://github.com/citeChris)
+
+## 🚀 Goals
+
+- Master **Semantic HTML5** for accessibility and SEO
+- Implement **Mobile-First Design** using CSS Flexbox and Grid
+- Build projects with a **Security-First** mindset
+- Learn JavaScript and ship **SecureVault** as my capstone project
+
+---
+
+## 🛠️ Tech Stack
+
+- **Languages:** HTML5, CSS3, Python (learning JavaScript next)
+- **Tools:** VS Code, Git, GitHub
+- **Learning:** freeCodeCamp, The Odin Project, javascript.info
+- **Learning Hub:** American Corner Ibadan, Jericho 🇳🇬  
+  *(U.S. Embassy-affiliated resource centre — where I access learning tools and build these projects)*
+
+---
+
+## 📚 Learning Resources
+- freeCodeCamp
+- The Odin Project
+- MDN Web Docs
+- javascript.info
+
+## 📂 Featured Projects
+
+| Project | Description | Live Demo |
+|---|---|---|
+| **Matrix Rain** | Canvas API animation with katakana glyphs, DPR handling, and keyboard controls | [Live Demo](https://citechris.github.io/100-days-of-code/matrix_rain.html) |
+| **Survey Form** | Structured form with semantic HTML input types and accessibility | [Live Demo](https://citechris.github.io/100-days-of-code/build-a-survey-form.html) |
+| **Tribute Page** | Responsive tribute page — mobile-first CSS fundamentals | [Live Demo](https://citechris.github.io/100-days-of-code/build-a-tribute-page.html) |
+| **Flexbox Photo Gallery** | Fluid responsive gallery using CSS Flexbox | [Live Demo](https://citechris.github.io/100-days-of-code/build-a-flexbox-photo-gallery.html) |
+| **Product Landing Page** | Full landing page with nav, hero, and features section | [Live Demo](https://citechris.github.io/100-days-of-code/build-a-product-landing-page.html) |
+| **Technical Docs Page** | Multi-section documentation layout with fixed sidebar nav | [Live Demo](https://citechris.github.io/100-days-of-code/build-a-technical-documentation-page.html) |
+| **Magazine Layout** | CSS Grid editorial layout with typography | [Live Demo](https://citechris.github.io/100-days-of-code/build-a-magazine.html) |
+| **City Skyline** | Pure CSS illustration using gradients and positioning | [Live Demo](https://citechris.github.io/100-days-of-code/build-a-city-skyline.html) |
+| **Piano** | CSS-only interactive piano keyboard | [Live Demo](https://citechris.github.io/100-days-of-code/design-a-piano.html) |
+| **Penguin** | CSS character animation | [Live Demo](https://citechris.github.io/100-days-of-code/build-a-flappy-penguin.html) |
+
+---
+
+## 🔒 Coming Soon
+
+**SecureVault** — A password health checker using HTML/CSS, Python/Flask,
+and the HaveIBeenPwned API. Deferred until JavaScript fundamentals are complete.
+
+---
+
+## 🛡️ Secure Coding Practices
+
+Even as a junior developer, I prioritize security:
+
+1. **Input Sanitization** — form inputs restricted to expected data types
+2. **Semantic HTML** — proper tags to prevent structure-based vulnerabilities
+3. **HTTPS Awareness** — all projects prepared for secure deployment
+
+---
+
+## 📈 Learning Roadmap
+
+- ✅ HTML Basics
+- ✅ CSS Flexbox & Grid
+- ✅ Responsive Web Design
+- ✅ Python Fundamentals
+- 🔄 JavaScript (in progress)
+- ⏳ SecureVault (capstone)
+
+---
+
+**Let's Connect:** [@citeChris](https://github.com/citeChris) · Day 60+
 - **LinkedIn:** [Isarael Ojo](https://www.linkedin.com/in/isaraelojo-dev)
-- **Current Status:** 100 Days of Code (Day 80+)
+- **Current Status:** 100 Days of Code (Day 80+).
