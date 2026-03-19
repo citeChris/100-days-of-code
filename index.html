@@ -19,16 +19,17 @@
       <span>&lt;</span>citeChris<span> /&gt;</span>
     </a>
     <ul class="nav-links">
-      <li><a href="#about">about</a></li>
-      <li><a href="#project-section">projects</a></li>
-      <li><a href="#contact">contact</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#project-section">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
       <li>
         <a id="profile-link"
            href="https://github.com/citeChris"
            target="_blank"
-           rel="noopener noreferrer">github ↗</a>
+           rel="noopener noreferrer">GitHub ↗</a>
       </li>
     </ul>
+    <button id="theme-toggle" aria-label="Toggle theme">☀️</button>
   </nav>
 
   <!-- HERO / WELCOME -->
@@ -59,7 +60,6 @@
       <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
         <path d="M8 3v10M4 9l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
       </svg>
-      scroll
     </div>
   </section><!-- end #welcome-section -->
 
@@ -93,8 +93,7 @@
           <a href="https://github.com/citeChris"
              class="btn btn-ghost"
              target="_blank"
-             rel="noopener noreferrer"
-             style="display:inline-flex; font-size:0.8rem;">
+             rel="noopener noreferrer">
             @citeChris on GitHub ↗
           </a>
         </div>
@@ -102,27 +101,27 @@
           <div class="skills-grid">
             <div class="skill-item">
               <span class="skill-name">HTML5</span>
-              <div class="skill-bar"><div class="skill-fill" style="width:88%; animation-delay:0.1s"></div></div>
+              <div class="skill-bar"><div class="skill-fill lang-html"></div></div>
             </div>
             <div class="skill-item">
               <span class="skill-name">CSS3</span>
-              <div class="skill-bar"><div class="skill-fill" style="width:78%; animation-delay:0.2s"></div></div>
+              <div class="skill-bar"><div class="skill-fill lang-css"></div></div>
             </div>
             <div class="skill-item">
               <span class="skill-name">Python</span>
-              <div class="skill-bar"><div class="skill-fill" style="width:55%; animation-delay:0.3s"></div></div>
+              <div class="skill-bar"><div class="skill-fill lang-python"></div></div>
             </div>
             <div class="skill-item">
               <span class="skill-name">JavaScript</span>
-              <div class="skill-bar"><div class="skill-fill" style="width:32%; animation-delay:0.4s"></div></div>
+              <div class="skill-bar"><div class="skill-fill lang-js"></div></div>
             </div>
             <div class="skill-item">
               <span class="skill-name">Git / GitHub</span>
-              <div class="skill-bar"><div class="skill-fill" style="width:65%; animation-delay:0.5s"></div></div>
+              <div class="skill-bar"><div class="skill-fill lang-git"></div></div>
             </div>
             <div class="skill-item">
               <span class="skill-name">Sec. Coding</span>
-              <div class="skill-bar"><div class="skill-fill" style="width:60%; animation-delay:0.6s"></div></div>
+              <div class="skill-bar"><div class="skill-fill lang-security"></div></div>
             </div>
           </div>
         </div>
@@ -305,7 +304,7 @@
     <div class="section fade-up">
       <p class="section-label">03 / contact</p>
       <h2 class="section-title">Let's Connect</h2>
-      <div class="section-divider" style="margin:0 auto 1.5rem;"></div>
+      <div class="section-divider"></div>
       <p class="contact-sub">
         I'm actively looking for entry-level opportunities and open to
         collaborations, feedback, and conversations about code.
@@ -332,21 +331,10 @@
 
   <!-- FOOTER -->
   <footer>
-    <p>Designed & built by <span>ISARAEL (citeChris) OJO</span> · 2026</p>
+    <p>Designed & built by <span>ISARAEL (citeChris) OJO</span> · <span id="year"></span></p>
   </footer>
-
-  <!-- Scroll Fade-In Observer -->
-  <script>
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-        }
-      });
-    }, { threshold: 0.12 });
-
-    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
-  </script>
+<!-- Scroll Fade-In Observer -->
+  <script src="index.js"></script>
 
 </body>
 </html>
