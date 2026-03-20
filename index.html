@@ -6,98 +6,119 @@
   <title>Portfolio | Isarael (citeChris) Ojo</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@200;300;400;700;800&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
-  
 </head>
 <body>
 
-  <!-- NAVBAR -->
+  <!-- SIDEBAR / NAVBAR -->
   <nav id="navbar">
-    <a href="#welcome-section" class="nav-logo">
-      <!-- (LOGO) WORK IN PROGRESS -->
-      <span>&lt;</span>citeChris<span> /&gt;</span>
-    </a>
-    <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#project-section">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li>
-        <a id="profile-link"
-           href="https://github.com/citeChris"
-           target="_blank"
-           rel="noopener noreferrer">GitHub ↗</a>
-      </li>
-    </ul>
-    <button id="theme-toggle" aria-label="Toggle theme">☀️</button>
+    <div class="nav-top">
+      <a href="#welcome-section" class="nav-logo">
+        <span>&lt;</span>citeChris<span> /&gt;</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#project-section">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="nav-bottom">
+      <div class="nav-socials">
+        <a href="https://github.com/citeChris" target="_blank" rel="noopener noreferrer">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+          <span>GitHub</span>
+        </a>
+        <a href="https://www.freecodecamp.org/citeChris" target="_blank" rel="noopener noreferrer">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M.497 12.402C-.01 11.76-.01 10.655.497 10.01l4.03-5.004c.51-.633 1.346-.76 1.866-.282.52.476.59 1.314.08 1.948L2.976 11.2l3.497 4.528c.51.635.44 1.473-.08 1.948-.52.478-1.356.352-1.867-.283L.497 12.402zM24 10.011c.508.645.508 1.75 0 2.39l-4.03 5.005c-.51.634-1.347.76-1.866.283-.52-.475-.59-1.313-.08-1.948L21.52 11.2l-3.497-4.528c-.51-.634-.44-1.472.08-1.948.52-.477 1.356-.35 1.867.283L24 10.01zM9.778 19.244c-.79.158-1.554-.35-1.71-1.14L5.635 5.077c-.156-.788.35-1.554 1.14-1.71.788-.156 1.554.35 1.71 1.14L10.92 17.53c.155.79-.35 1.556-1.14 1.712z"/></svg>
+          <span>fCC</span>
+        </a>
+      </div>
+      <button id="theme-toggle" aria-label="Toggle theme">☀️</button>
+    </div>
   </nav>
 
-  <!-- HERO / WELCOME -->
-  <section id="welcome-section">
-    <div class="hero-inner">
-      <div class="hero-tag">Available for opportunities</div>
-      <h1>
-        Hi, I'm <span class="name-accent">Isarael Ojo</span>.<br>
-        Developer from Ibadan, Nigeria —<br>
-        building toward secure software,<br>
-        one commit at a time.
-      </h1>
-      <p class="hero-sub">
-        Entry-level software developer with a focus on
-        <strong>web development</strong>, <strong>Python automation</strong>,
-        and <strong>secure coding practices</strong>.
-        Based in Nigeria 🇳🇬 — learning in public, building in the open.
-      </p>
-      <div class="hero-ctas">
-        <a href="#project-section" class="btn btn-primary">View my work →</a>
-        <a href="https://github.com/citeChris"
-           target="_blank"
-           rel="noopener noreferrer"
-           class="btn btn-ghost">GitHub profile</a>
-      </div><!-- end .hero-ctas -->
-    </div><!-- end .hero-inner -->
-    <div class="scroll-hint">
-      <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-        <path d="M8 3v10M4 9l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
-    </div>
-  </section><!-- end #welcome-section -->
+  <!-- MAIN -->
+  <div class="main">
 
-  <!-- ABOUT -->
-  <div id="about">
-    <div class="section fade-up">
-      <p class="section-label">01 / about</p>
-      <h2 class="section-title">Who I Am</h2>
-      <div class="section-divider"></div>
-      <div class="about-grid">
-        <div class="about-text">
-          <p>
-            I'm <strong>Isarael (citeChris) Ojo</strong>, a junior software developer
-            documenting my growth through the
-            <strong>100 Days of Code</strong> challenge. I'm building toward
-            an entry-level web developer role with a strong emphasis on
-            writing clean, secure code.
-          </p>
-          <p>
-            My learning journey started with <strong>HTML & CSS</strong>,
-            progressing through responsive design principles, semantic markup,
-            and freeCodeCamp's Responsive Web Design curriculum. I'm now diving
-            deep into <strong>JavaScript fundamentals</strong> with my sights set
-            on a full-stack capstone project — <em>SecureVault</em>.
-          </p>
-          <p>
-            I study and build on weekends, share my progress publicly on GitHub,
-            and stay plugged into the developer community.
-          </p>
-          <br>
+    <!-- HERO -->
+    <section id="welcome-section">
+      <div class="hero-left">
+        <div class="hero-tag">Available for opportunities</div>
+        <h1 class="hero-name">
+          <span class="first">Isarael</span>
+          <span class="last">Ojo.</span>
+        </h1>
+        <p class="hero-role">Junior Software Developer / Ibadan, Nigeria</p>
+        <div class="hero-ctas">
+          <a href="#project-section" class="btn btn-primary">View my work →</a>
           <a href="https://github.com/citeChris"
-             class="btn btn-ghost"
+             id="profile-link"
              target="_blank"
-             rel="noopener noreferrer">
-            @citeChris on GitHub ↗
-          </a>
+             rel="noopener noreferrer"
+             class="btn btn-ghost">GitHub ↗</a>
         </div>
-        <div>
+      </div>
+
+      <div class="hero-right">
+        <div class="hero-about-card">
+          <p>
+            Entry-level developer focused on
+            <strong>web development</strong>, <strong>Python automation</strong>,
+            and <strong>secure coding practices</strong>.
+          </p>
+          <p>
+            Building toward my first dev role while working on
+            <strong>SecureVault</strong> — a full-stack password health checker
+            combining everything I've learned.
+          </p>
+          <p>Learning in public · Building in the open · 100 Days of Code 🇳🇬</p>
+        </div>
+      </div>
+
+      <div class="scroll-hint">
+        <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
+          <path d="M8 3v10M4 9l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        scroll
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <div id="about">
+      <div class="section fade-up">
+        <p class="section-label">01 / about</p>
+        <h2 class="section-title">Who I Am</h2>
+        <div class="section-divider"></div>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              I'm <strong>Isarael (citeChris) Ojo</strong>, a junior software
+              developer documenting my growth through the
+              <strong>100 Days of Code</strong> challenge — building toward an
+              entry-level role with a strong emphasis on clean, secure code.
+            </p>
+            <p>
+              My journey started with <strong>HTML & CSS</strong>, progressing
+              through responsive design and freeCodeCamp's Responsive Web Design
+              curriculum. I'm now diving into <strong>JavaScript</strong> with
+              my sights set on <em>SecureVault</em> as my capstone project.
+            </p>
+            <p>
+              I study and build at
+              <strong>American Corner Ibadan, Jericho</strong> — a U.S.
+              Embassy-affiliated resource centre where I access learning tools
+              and ship these projects.
+            </p>
+            <br>
+            <a href="https://github.com/citeChris"
+               class="btn btn-ghost"
+               target="_blank"
+               rel="noopener noreferrer">
+              @citeChris on GitHub ↗
+            </a>
+          </div>
+
           <div class="skills-grid">
             <div class="skill-item">
               <span class="skill-name">HTML5</span>
@@ -127,213 +148,186 @@
         </div>
       </div>
     </div>
-  </div><!-- end #about -->
 
-  <!-- PROJECTS -->
-  <section id="project-section">
-    <div class="inner fade-up">
-      <p class="section-label">02 / projects</p>
-      <h2 class="section-title">Things I've Built</h2>
-      <div class="section-divider"></div>
+    <!-- PROJECTS -->
+    <section id="project-section">
+      <div class="inner fade-up">
+        <p class="section-label">02 / projects</p>
+        <h2 class="section-title">Things I've Built</h2>
+        <div class="section-divider"></div>
+        <div class="projects-grid">
 
-      <div class="projects-grid">
+          <div class="project-tile featured">
+            <div class="project-top">
+              <div class="project-icon">🛡️</div>
+              <span class="project-badge coming">In Progress</span>
+            </div>
+            <div class="project-name">SecureVault</div>
+            <p class="project-desc">
+              A password health checker that lets users test the strength and
+              breach status of their credentials. HTML/CSS frontend,
+              Python/Flask backend, HaveIBeenPwned API — my anchor portfolio
+              project combining everything I've learned.
+            </p>
+            <div class="project-tags">
+              <span class="tag">HTML/CSS</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">Python</span>
+              <span class="tag">Flask</span>
+              <span class="tag">HaveIBeenPwned API</span>
+              <span class="tag">Cybersecurity</span>
+            </div>
+            <div class="project-links">
+              <a class="project-link disabled" href="#">🔒 Coming Soon</a>
+            </div>
+          </div>
 
-        <!-- Featured: SecureVault -->
-        <div class="project-tile featured">
-          <div class="project-top">
-            <div class="project-icon">🛡️</div>
-            <span class="project-badge coming">In Progress</span>
+          <div class="project-tile">
+            <div class="project-top">
+              <div class="project-icon">🌧️</div>
+              <span class="project-badge">HTML / JS</span>
+            </div>
+            <div class="project-name">Matrix Rain</div>
+            <p class="project-desc">
+              Canvas animation replicating the digital rain — vanilla HTML/JS,
+              DPR handling, delta time, katakana charset, keyboard controls.
+            </p>
+            <div class="project-tags">
+              <span class="tag">HTML5 Canvas</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">Animation</span>
+            </div>
+            <div class="project-links">
+              <a class="project-link"
+                 href="https://citechris.github.io/100-days-of-code/matrix_rain.html"
+                 target="_blank" rel="noopener noreferrer">Live Demo →</a>
+            </div>
           </div>
-          <div class="project-name">SecureVault</div>
-          <p class="project-desc">
-            A password health checker that lets users test the strength and
-            breach status of their credentials. Built with an HTML/CSS frontend,
-            a Python/Flask backend, and integrated with the HaveIBeenPwned API
-            — my anchor portfolio project combining everything I've learned.
-          </p>
-          <div class="project-tags">
-            <span class="tag">HTML/CSS</span>
-            <span class="tag">JavaScript</span>
-            <span class="tag">Python</span>
-            <span class="tag">Flask</span>
-            <span class="tag">HaveIBeenPwned API</span>
-            <span class="tag">Cybersecurity</span>
+
+          <div class="project-tile">
+            <div class="project-top">
+              <div class="project-icon">🖼️</div>
+              <span class="project-badge">CSS Layout</span>
+            </div>
+            <div class="project-name">Flexbox Photo Gallery</div>
+            <p class="project-desc">
+              Responsive photo gallery built with CSS Flexbox — fluid,
+              adaptive layout across all screen sizes.
+            </p>
+            <div class="project-tags">
+              <span class="tag">HTML5</span>
+              <span class="tag">CSS Flexbox</span>
+              <span class="tag">Responsive</span>
+            </div>
+            <div class="project-links">
+              <a class="project-link"
+                 href="https://citechris.github.io/100-days-of-code/build-a-flexbox-photo-gallery.html"
+                 target="_blank" rel="noopener noreferrer">Live Demo →</a>
+            </div>
           </div>
-          <div class="project-links">
-            <a class="project-link disabled" href="#">🔒 Coming Soon</a>
+
+          <div class="project-tile">
+            <div class="project-top">
+              <div class="project-icon">📋</div>
+              <span class="project-badge">HTML Form</span>
+            </div>
+            <div class="project-name">Survey Form</div>
+            <p class="project-desc">
+              Structured form with semantic HTML5 input types, accessibility
+              considerations, and client-side validation.
+            </p>
+            <div class="project-tags">
+              <span class="tag">HTML5</span>
+              <span class="tag">CSS3</span>
+              <span class="tag">Accessibility</span>
+            </div>
+            <div class="project-links">
+              <a class="project-link"
+                 href="https://citechris.github.io/100-days-of-code/build-a-survey-form.html"
+                 target="_blank" rel="noopener noreferrer">Live Demo →</a>
+            </div>
           </div>
+
+          <div class="project-tile">
+            <div class="project-top">
+              <div class="project-icon">🏛️</div>
+              <span class="project-badge">Responsive</span>
+            </div>
+            <div class="project-name">Tribute Page</div>
+            <p class="project-desc">
+              Responsive tribute page — clean layout, semantic HTML, and
+              mobile-first CSS fundamentals.
+            </p>
+            <div class="project-tags">
+              <span class="tag">HTML5</span>
+              <span class="tag">CSS3</span>
+              <span class="tag">Mobile-First</span>
+            </div>
+            <div class="project-links">
+              <a class="project-link"
+                 href="https://citechris.github.io/100-days-of-code/build-a-tribute-page.html"
+                 target="_blank" rel="noopener noreferrer">Live Demo →</a>
+            </div>
+          </div>
+
+          <div class="project-tile">
+            <div class="project-top">
+              <div class="project-icon">🐍</div>
+              <span class="project-badge">Python</span>
+            </div>
+            <div class="project-name">Python Learning Journal</div>
+            <p class="project-desc">
+              Documented log of Python fundamentals — syntax, data structures,
+              scripting. Security-first mindset from day one.
+            </p>
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Automation</span>
+              <span class="tag">Notes</span>
+            </div>
+            <div class="project-links">
+              <a class="project-link"
+                 href="https://github.com/citeChris/100-days-of-code/blob/main/python_notes.md"
+                 target="_blank" rel="noopener noreferrer">View Notes →</a>
+            </div>
+          </div>
+
         </div>
-
-        <!-- Matrix Rain -->
-        <div class="project-tile">
-          <div class="project-top">
-            <div class="project-icon">🌧️</div>
-            <span class="project-badge">HTML / JS</span>
-          </div>
-          <div class="project-name">Matrix Rain</div>
-          <p class="project-desc">
-            A canvas-based animation replicating the iconic "digital rain" from
-            The Matrix — built purely in HTML and JavaScript without any
-            libraries. Demonstrates DOM manipulation and the Canvas API.
-          </p>
-          <div class="project-tags">
-            <span class="tag">HTML5 Canvas</span>
-            <span class="tag">JavaScript</span>
-            <span class="tag">Animation</span>
-          </div>
-          <div class="project-links">
-            <a class="project-link"
-               href="https://citechris.github.io/100-days-of-code/matrix_rain.html"
-               target="_blank" rel="noopener noreferrer">
-              Live Demo →
-            </a>
-          </div>
-        </div>
-
-        <!-- Flexbox Photo Gallery -->
-        <div class="project-tile">
-          <div class="project-top">
-            <div class="project-icon">🖼️</div>
-            <span class="project-badge">CSS Layout</span>
-          </div>
-          <div class="project-name">Flexbox Photo Gallery</div>
-          <p class="project-desc">
-            A responsive photo gallery built with CSS Flexbox — showcasing
-            fluid, adaptive layout techniques with clean image presentation
-            across all screen sizes.
-          </p>
-          <div class="project-tags">
-            <span class="tag">HTML5</span>
-            <span class="tag">CSS Flexbox</span>
-            <span class="tag">Responsive</span>
-          </div>
-          <div class="project-links">
-            <a class="project-link"
-               href="https://citechris.github.io/100-days-of-code/build-a-flexbox-photo-gallery.html"
-               target="_blank" rel="noopener noreferrer">
-              Live Demo →
-            </a>
-          </div>
-        </div>
-
-        <!-- Survey Form -->
-        <div class="project-tile">
-          <div class="project-top">
-            <div class="project-icon">📋</div>
-            <span class="project-badge">HTML Form</span>
-          </div>
-          <div class="project-name">Survey Form</div>
-          <p class="project-desc">
-            A structured survey form with semantic HTML input types,
-            accessibility considerations, and client-side validation — one of my
-            freeCodeCamp certification projects.
-          </p>
-          <div class="project-tags">
-            <span class="tag">HTML5</span>
-            <span class="tag">CSS3</span>
-            <span class="tag">Accessibility</span>
-            <span class="tag">Forms</span>
-          </div>
-          <div class="project-links">
-            <a class="project-link"
-               href="https://citechris.github.io/100-days-of-code/build-a-survey-form.html"
-               target="_blank" rel="noopener noreferrer">
-              Live Demo →
-            </a>
-          </div>
-        </div>
-
-        <!-- Tribute Page -->
-        <div class="project-tile">
-          <div class="project-top">
-            <div class="project-icon">🏛️</div>
-            <span class="project-badge">Responsive</span>
-          </div>
-          <div class="project-name">Tribute Page</div>
-          <p class="project-desc">
-            A responsive tribute page built as a freeCodeCamp certification
-            project — demonstrates clean layout, semantic HTML, and mobile-first
-            CSS styling fundamentals.
-          </p>
-          <div class="project-tags">
-            <span class="tag">HTML5</span>
-            <span class="tag">CSS3</span>
-            <span class="tag">Mobile-First</span>
-          </div>
-          <div class="project-links">
-            <a class="project-link"
-               href="https://citechris.github.io/100-days-of-code/build-a-tribute-page.html"
-               target="_blank" rel="noopener noreferrer">
-              Live Demo →
-            </a>
-          </div>
-        </div>
-
-        <!-- Python Learning Journal -->
-        <div class="project-tile">
-          <div class="project-top">
-            <div class="project-icon">🐍</div>
-            <span class="project-badge">Python</span>
-          </div>
-          <div class="project-name">Python Learning Journal</div>
-          <p class="project-desc">
-            A documented learning log of Python fundamentals — covering syntax,
-            data structures, and scripting concepts. Reflects a security-first
-            coding mindset from day one.
-          </p>
-          <div class="project-tags">
-            <span class="tag">Python</span>
-            <span class="tag">Automation</span>
-            <span class="tag">Notes</span>
-          </div>
-          <div class="project-links">
-            <a class="project-link"
-               href="https://github.com/citeChris/100-days-of-code/blob/main/python_notes.md"
-               target="_blank" rel="noopener noreferrer">
-              View Notes →
-            </a>
-          </div>
-        </div>
-
       </div>
-    </div>
-  </section><!-- end #project-section -->
+    </section>
 
-  <!-- CONTACT -->
-  <div id="contact">
-    <div class="section fade-up">
-      <p class="section-label">03 / contact</p>
-      <h2 class="section-title">Let's Connect</h2>
-      <div class="section-divider"></div>
-      <p class="contact-sub">
-        I'm actively looking for entry-level opportunities and open to
-        collaborations, feedback, and conversations about code.
-      </p>
-      <div class="contact-links">
-        <a class="btn btn-primary"
-           href="https://github.com/citeChris"
-           target="_blank" rel="noopener noreferrer">
-          GitHub Profile ↗
-        </a>
-        <a class="btn btn-ghost"
-           href="https://www.freecodecamp.org/citeChris"
-           target="_blank" rel="noopener noreferrer">
-          freeCodeCamp ↗
-        </a>
-        <a class="btn btn-ghost"
+    <!-- CONTACT -->
+    <div id="contact">
+      <div class="section fade-up">
+        <p class="section-label">03 / contact</p>
+        <h2 class="section-title">Let's Connect</h2>
+        <div class="section-divider" style="margin: 0 auto 1.5rem;"></div>
+        <p class="contact-sub">
+          I'm actively looking for entry-level opportunities and open to
+          collaborations, feedback, and conversations about code.
+        </p>
+        <div class="contact-links">
+          <a class="btn btn-primary"
+             href="https://github.com/citeChris"
+             target="_blank" rel="noopener noreferrer">GitHub Profile ↗</a>
+          <a class="btn btn-ghost"
+             href="https://www.freecodecamp.org/citeChris"
+             target="_blank" rel="noopener noreferrer">freeCodeCamp ↗</a>
+          <a class="btn btn-ghost"
            href="https://www.linkedin.com/in/isarael-ojo-dev/"
            target="_blank" rel="noopener noreferrer">
-          LinkedIn ↗
-        </a>
+          LinkedIn ↗</a>
+        </div>
       </div>
     </div>
-  </div><!-- end #contact -->
 
-  <!-- FOOTER -->
-  <footer>
-    <p>Designed & built by <span>ISARAEL (citeChris) OJO</span> · <span id="year"></span></p>
-  </footer>
-<!-- Scroll Fade-In Observer -->
+    <!-- FOOTER -->
+    <footer>
+      <p>Designed & built by <span>Isarael (citeChris) Ojo</span> · <span id="year"></span></p>
+    </footer>
+
+  </div><!-- end .main -->
+
   <script src="index.js"></script>
 
 </body>
