@@ -1,6 +1,6 @@
 # 🛡️ 100 Days of Code: Becoming a Skilled Coder
 
-## Isarael (citeChris) Ojo | Entry-Level Software Developer
+## ISARAEL (citeChris) OJO | Entry-Level Software Developer
 
 Welcome to my learning journal! This repo tracks my journey through
 **freeCodeCamp's Responsive Web Design** certification and beyond.
@@ -36,8 +36,10 @@ Welcome to my learning journal! This repo tracks my journey through
 
 | Project | Description | Live Demo |
 |---|---|---|
+| **Portfolio** | | [Live Demo](https://citechris.github.io/100-days-of-code/index.html)
+| **SecureVault** | Full-stack password health checker — HTML/CSS frontend, Python/Flask backend, HaveIBeenPwned API integration. Capstone project bridging web dev and cybersecurity | [Live Demo]
 | **Matrix Rain** | Canvas API animation with katakana glyphs, DPR handling, and keyboard controls | [Live Demo](https://citechris.github.io/100-days-of-code/matrix_rain.html) |
-| **Survey Form** | Structured form with semantic HTML input types and accessibility | [Live Demo](https://citechris.github.io/100-days-of-code/build-a-survey-form.html) |
+| **Survey Form** | Accessible survey form using semantic HTML5 input types — radio, select, textarea — with built-in client-side validation. | [Live Demo](https://citechris.github.io/100-days-of-code/build-a-survey-form.html) |
 | **Tribute Page** | Responsive tribute page — mobile-first CSS fundamentals | [Live Demo](https://citechris.github.io/100-days-of-code/build-a-tribute-page.html) |
 | **Flexbox Photo Gallery** | Fluid responsive gallery using CSS Flexbox | [Live Demo](https://citechris.github.io/100-days-of-code/build-a-flexbox-photo-gallery.html) |
 | **Product Landing Page** | Full landing page with nav, hero, and features section | [Live Demo](https://citechris.github.io/100-days-of-code/build-a-product-landing-page.html) |
@@ -46,6 +48,7 @@ Welcome to my learning journal! This repo tracks my journey through
 | **City Skyline** | Pure CSS illustration using gradients and positioning | [Live Demo](https://citechris.github.io/100-days-of-code/build-a-city-skyline.html) |
 | **Piano** | CSS-only interactive piano keyboard | [Live Demo](https://citechris.github.io/100-days-of-code/design-a-piano.html) |
 | **Penguin** | CSS character animation | [Live Demo](https://citechris.github.io/100-days-of-code/build-a-flappy-penguin.html) |
+| **Python Learning Journal** | Documented log of Python fundamentals -syntax, data structures, and scripting with a security-first mindset | [View Notes](https://github.com/citeChris/100-days-of-code/blob/main/python_notes.md)
 
 ---
 
@@ -82,4 +85,4 @@ Even as a junior developer, I prioritize security:
 **Let's Connect:** [@citeChris](https://github.com/citeChris) · 
 - **LinkedIn:** [Isarael Ojo](https://www.linkedin.com/in/isaraelojo-dev)
 - **X:** [Isarael Ojo](https://x.com/IsaraelOjo)
-- **Current Status:** 100 Days of Code (Day 80+).
+- **Current Status:** 100 Days of Code (Day 85+).
