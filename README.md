@@ -37,7 +37,7 @@ Welcome to my learning journal! This repo tracks my journey through
 | Project | Description | Live Demo |
 |---|---|---|
 | **Portfolio** | | [Live Demo](https://citechris.github.io/100-days-of-code/index.html)
-| **SecureVault** | Full-stack password health checker — HTML/CSS frontend, Python/Flask backend, HaveIBeenPwned API integration. Capstone project bridging web dev and cybersecurity | [Live Demo]
+| **SecureVault** | Full-stack password health checker — HTML/CSS frontend, Python/Flask backend, HaveIBeenPwned API integration. Capstone project bridging web dev and cybersecurity | [Coming Soon]
 | **Matrix Rain** | Canvas API animation with katakana glyphs, DPR handling, and keyboard controls | [Live Demo](https://citechris.github.io/100-days-of-code/matrix_rain.html) |
 | **Survey Form** | Accessible survey form using semantic HTML5 input types — radio, select, textarea — with built-in client-side validation. | [Live Demo](https://citechris.github.io/100-days-of-code/build-a-survey-form.html) |
 | **Tribute Page** | Responsive tribute page — mobile-first CSS fundamentals | [Live Demo](https://citechris.github.io/100-days-of-code/build-a-tribute-page.html) |
