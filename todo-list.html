@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Manager</title>
+  <link rel="stylesheet" href="todo-list.css">
+</head>
+<body>
+
+<div class="app">
+
+  <div class="stats">
+    <div class="stat"><div class="stat-n" id="sRem">0</div><div class="stat-l">Remaining</div></div>
+    <div class="stat"><div class="stat-n" id="sDone">0</div><div class="stat-l">Completed</div></div>
+    <div class="stat"><div class="stat-n" id="sAll">0</div><div class="stat-l">All tasks</div></div>
+  </div>
+
+  <div class="bar-wrap"><div class="bar" id="bar"></div></div>
+
+  <div class="filters">
+    <button class="f on" data-f="all">All</button>
+    <button class="f" data-f="active">Active</button>
+    <button class="f" data-f="done">Done</button>
+  </div>
+
+  <div class="list" id="list"></div>
+
+  <div class="add-row">
+    <input type="text" id="inp" placeholder="Add a new task…">
+    <button id="abtn">+ Add</button>
+  </div>
+
+</div>
+
+<script>
+  const DOTS = ['#9FE1CB', '#FAC775', '#AFA9EC', '#F4C0D1', '#B5D4F4'];
+
+  let tasks = [
+    { id: 1, text: 'Design landing page for client', done: false, dot: 0 },
+    { id: 2, text: 'Push portfolio to GitHub',        done: false, dot: 2 },
+    { id: 3, text: 'Review client feedback',           done: false, dot: 1 },
+    { id: 4, text: 'Write project documentation',      done: false, dot: 4 },
+    { id: 5, text: 'Set up Fiverr gig images',         done: true,  dot: 0 },
+    { id: 6, text: 'Create GitHub README',              done: true,  dot: 3 },
+  ];
+
+  let filt = 'all', nid = 7, newId = -1;
+
+  const $ = id => document.getElementById(id);
+
+  function render() {
+    const shown = tasks.filter(t =>
+      filt === 'all'    ? true :
+      filt === 'active' ? !t.done : t.done
+    );
+
+    $('list').innerHTML = shown.length
+      ? shown.map(t => `
+          <div class="item${t.id === newId ? ' new' : ''}" data-id="${t.id}">
+            <button class="chk${t.done ? ' on' : ''}" aria-label="${t.done ? 'Mark incomplete' : 'Mark complete'}">
+              ${t.done ? '✓' : ''}
+            </button>
+            <div class="dot" style="background:${DOTS[t.dot]}"></div>
+            <span class="label${t.done ? ' done' : ''}">${t.text}</span>
+            <button class="del" aria-label="Delete task">✕</button>
+          </div>
+        `).join('')
+      : '<div class="empty">Nothing here yet</div>';
+
+    const done  = tasks.filter(t => t.done).length;
+    const total = tasks.length;
+
+    $('sRem').textContent  = total - done;
+    $('sDone').textContent = done;
+    $('sAll').textContent  = total;
+    $('bar').style.width   = total ? Math.round(done / total * 100) + '%' : '0%';
+
+    newId = -1;
+  }
+
+  // Filter tabs
+  document.querySelector('.filters').addEventListener('click', e => {
+    const btn = e.target.closest('.f');
+    if (!btn) return;
+    document.querySelectorAll('.f').forEach(b => b.classList.remove('on'));
+    btn.classList.add('on');
+    filt = btn.dataset.f;
+    render();
+  });
+
+  // Check / delete
+  $('list').addEventListener('click', e => {
+    const card = e.target.closest('.item');
+    if (!card) return;
+    const id = +card.dataset.id;
+    if (e.target.closest('.del')) {
+      tasks = tasks.filter(t => t.id !== id);
+    } else {
+      const t = tasks.find(t => t.id === id);
+      if (t) t.done = !t.done;
+    }
+    render();
+  });
+
+  // Add task
+  function add() {
+    const inp  = $('inp');
+    const text = inp.value.trim();
+    if (!text) return;
+    newId = nid;
+    tasks.unshift({
+      id:   nid++,
+      text,
+      done: false,
+      dot:  Math.floor(Math.random() * DOTS.length),
+    });
+    inp.value = '';
+    render();
+  }
+
+  $('abtn').addEventListener('click', add);
+  $('inp').addEventListener('keydown', e => e.key === 'Enter' && add());
+
+  render();
+</script>
+
+</body>
+</html>

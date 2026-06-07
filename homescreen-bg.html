@@ -5,316 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>citeChris — Homescreen</title>
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=JetBrains+Mono:wght@300;400;700&display=swap" rel="stylesheet">
-<style>
-  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-
-  :root {
-    --green: #00ff87;
-    --green-dim: #00c46a;
-    --green-pale: rgba(0,255,135,0.12);
-    --green-glow: rgba(0,255,135,0.06);
-    --dark: #060a06;
-    --mid: #0d1a0d;
-    --text: #e8f5e8;
-    --muted: rgba(232,245,232,0.45);
-    --accent: #ff6b35;
-  }
-
-  html, body {
-    width: 100%; height: 100%;
-    overflow: hidden;
-    background: var(--dark);
-    font-family: 'JetBrains Mono', monospace;
-    color: var(--text);
-    cursor: none;
-  }
-
-  /* ── scanline overlay ── */
-  body::before {
-    content: '';
-    position: fixed; inset: 0;
-    background: repeating-linear-gradient(
-      0deg,
-      transparent,
-      transparent 2px,
-      rgba(0,0,0,0.18) 2px,
-      rgba(0,0,0,0.18) 4px
-    );
-    pointer-events: none;
-    z-index: 100;
-  }
-
-  /* ── vignette ── */
-  body::after {
-    content: '';
-    position: fixed; inset: 0;
-    background: radial-gradient(ellipse at center,
-      transparent 30%,
-      rgba(0,0,0,0.65) 100%);
-    pointer-events: none;
-    z-index: 99;
-  }
-
-  /* ── animated grid bg ── */
-  .grid-bg {
-    position: fixed; inset: 0;
-    background-image:
-      linear-gradient(rgba(0,255,135,0.04) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(0,255,135,0.04) 1px, transparent 1px);
-    background-size: 60px 60px;
-    animation: gridShift 20s linear infinite;
-  }
-
-  @keyframes gridShift {
-    0%  { background-position: 0 0; }
-    100%{ background-position: 60px 60px; }
-  }
-
-  /* ── floating code snippets ── */
-  .floaters {
-    position: fixed; inset: 0;
-    pointer-events: none;
-    overflow: hidden;
-  }
-
-  .snippet {
-    position: absolute;
-    font-size: 11px;
-    font-family: 'JetBrains Mono', monospace;
-    color: rgba(102, 255, 0, 0.438);
-    white-space: nowrap;
-    animation: floatUp linear infinite;
-    user-select: none;
-  }
-
-  @keyframes floatUp {
-    0%   { transform: translateY(110vh); opacity: 0; }
-    5%   { opacity: 1; }
-    90%  { opacity: 0.15; }
-    100% { transform: translateY(-20vh); opacity: 0; }
-  }
-
-  /* ── corner markers ── */
-  .corner {
-    position: fixed;
-    width: 28px; height: 28px;
-    border-color: var(--green-dim);
-    border-style: solid;
-    opacity: 0.6;
-    z-index: 10;
-  }
-  .corner-tl { top: 24px; left: 24px; border-width: 2px 0 0 2px; }
-  .corner-tr { top: 24px; right: 24px; border-width: 2px 2px 0 0; }
-  .corner-bl { bottom: 24px; left: 24px; border-width: 0 0 2px 2px; }
-  .corner-br { bottom: 24px; right: 24px; border-width: 0 2px 2px 0; }
-
-  /* ── status bar (top) ── */
-  .status-bar {
-    position: fixed; top: 0; left: 0; right: 0;
-    display: flex; justify-content: space-between; align-items: center;
-    padding: 14px 52px;
-    font-size: 10px;
-    letter-spacing: 0.12em;
-    color: rgba(0,255,135,0.4);
-    z-index: 10;
-    border-bottom: 1px solid rgba(0,255,135,0.06);
-  }
-
-  .status-dot {
-    display: inline-block;
-    width: 6px; height: 6px;
-    border-radius: 50%;
-    background: var(--green);
-    margin-right: 6px;
-    animation: pulse 2s ease-in-out infinite;
-  }
-
-  @keyframes pulse {
-    0%, 100% { opacity: 1; }
-    50%       { opacity: 0.3; }
-  }
-
-  /* ── main center content ── */
-  .center {
-    position: fixed; inset: 0;
-    display: flex; flex-direction: column;
-    align-items: center; justify-content: center;
-    z-index: 20;
-    gap: 0;
-  }
-
-  .prompt-line {
-    font-size: 12px;
-    letter-spacing: 0.18em;
-    color: var(--green-dim);
-    margin-bottom: 18px;
-    opacity: 0;
-    animation: fadeIn 0.6s ease forwards 0.4s;
-  }
-
-  .prompt-line span { color: var(--muted); }
-
-  .greeting {
-    font-family: 'Syne', sans-serif;
-    font-weight: 800;
-    font-size: clamp(52px, 9vw, 120px);
-    letter-spacing: -0.02em;
-    line-height: 1;
-    color: var(--text);
-    position: relative;
-    opacity: 0;
-    animation: slideUp 0.8s cubic-bezier(0.16,1,0.3,1) forwards 0.7s;
-  }
-
-  .greeting .accent { color: var(--green); }
-  .greeting .comma  { color: var(--accent); }
-
-  .tagline {
-    font-size: clamp(13px, 1.4vw, 18px);
-    color: var(--muted);
-    margin-top: 20px;
-    letter-spacing: 0.06em;
-    opacity: 0;
-    animation: fadeIn 0.6s ease forwards 1.3s;
-  }
-
-  .tagline .highlight { color: var(--green); font-weight: 700; }
-
-  /* ── handle badge ── */
-  .handle {
-    display: flex; align-items: center; gap: 10px;
-    margin-top: 36px;
-    padding: 10px 22px;
-    border: 1px solid rgba(0,255,135,0.25);
-    border-radius: 2px;
-    background: rgba(0,255,135,0.04);
-    opacity: 0;
-    animation: fadeIn 0.6s ease forwards 1.6s;
-  }
-
-  .handle-icon {
-    width: 8px; height: 8px;
-    border-radius: 50%;
-    background: var(--green);
-    animation: pulse 1.5s ease-in-out infinite;
-  }
-
-  .handle-text {
-    font-size: 12px;
-    letter-spacing: 0.16em;
-    color: var(--green-dim);
-    text-transform: uppercase;
-  }
-
-  /* ── progress bar ── */
-  .progress-wrap {
-    margin-top: 42px;
-    width: min(320px, 80vw);
-    opacity: 0;
-    animation: fadeIn 0.6s ease forwards 2s;
-  }
-
-  .progress-label {
-    display: flex; justify-content: space-between;
-    font-size: 10px;
-    letter-spacing: 0.14em;
-    color: rgba(0,255,135,0.4);
-    margin-bottom: 8px;
-  }
-
-  .progress-track {
-    height: 2px;
-    background: rgba(0,255,135,0.1);
-    border-radius: 0;
-    overflow: hidden;
-  }
-
-  .progress-fill {
-    height: 100%;
-    background: linear-gradient(90deg, var(--green-dim), var(--green));
-    animation: load 3s cubic-bezier(0.25,0,0,1) forwards 2.2s;
-    width: 0%;
-  }
-
-  @keyframes load {
-    0%  { width: 0%; }
-    60% { width: 72%; }
-    80% { width: 85%; }
-    100%{ width: 100%; }
-  }
-
-  /* ── bottom bar ── */
-  .bottom-bar {
-    position: fixed; bottom: 0; left: 0; right: 0;
-    display: flex; justify-content: space-between; align-items: center;
-    padding: 14px 52px;
-    font-size: 10px;
-    letter-spacing: 0.12em;
-    color: rgba(0,255,135,0.3);
-    z-index: 10;
-    border-top: 1px solid rgba(0,255,135,0.06);
-    opacity: 0;
-    animation: fadeIn 0.6s ease forwards 2.5s;
-  }
-
-  /* ── side decorations ── */
-  .side-left, .side-right {
-    position: fixed;
-    top: 50%; transform: translateY(-50%);
-    display: flex; flex-direction: column; gap: 6px;
-    z-index: 10;
-    opacity: 0;
-    animation: fadeIn 0.6s ease forwards 2s;
-  }
-  .side-left { left: 24px; }
-  .side-right { right: 24px; }
-
-  .side-tick {
-    width: 14px; height: 1px;
-    background: rgba(0,255,135,0.25);
-  }
-  .side-tick:nth-child(3) { width: 20px; background: rgba(0,255,135,0.5); }
-
-  /* ── custom cursor ── */
-  .cursor {
-    position: fixed;
-    width: 12px; height: 12px;
-    border: 1.5px solid var(--green);
-    border-radius: 50%;
-    pointer-events: none;
-    z-index: 9999;
-    transition: transform 0.15s ease;
-    transform: translate(-50%,-50%);
-  }
-
-  /* ── animations ── */
-  @keyframes fadeIn {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-  }
-
-  @keyframes slideUp {
-    from { opacity: 0; transform: translateY(30px); }
-    to   { opacity: 1; transform: translateY(0); }
-  }
-
-  /* ── blinking cursor after greeting ── */
-  .blink-cursor {
-    display: inline-block;
-    width: 3px; height: 0.85em;
-    background: var(--green);
-    margin-left: 4px;
-    vertical-align: middle;
-    animation: blink 1s step-end infinite;
-    opacity: 0;
-    animation-delay: 1.8s;
-  }
-
-  @keyframes blink {
-    0%,100%{ opacity: 0; }
-    50%    { opacity: 1; }
-  }
-</style>
+<link rel="stylesheet" href="homescreen-bg.css">
 </head>
 <body>
 
@@ -385,16 +76,44 @@
 <div class="bottom-bar">
   <div>ASPIRING SOFTWARE ENGINEER</div>
   <div>UI · JS · PYTHON · SECURITY</div>
-  <div>EST. 2026</div>
+  <div>EST. 2025</div>
 </div>
 
 <!-- cursor -->
 <div class="cursor" id="cursor"></div>
+<!-- cursor toggle for accessibility -->
+<button id="cursor-toggle" style="position:fixed;top:12px;right:12px;z-index:10000;font-size:11px;padding:4px 10px;background:rgba(0,255,135,0.13);color:#00ff87;border:1px solid #00ff87;border-radius:3px;cursor:pointer;">Disable Custom Cursor</button>
 
-<script>
+<script defer>
+  // cursor toggle logic
+  const cursorToggle = document.getElementById('cursor-toggle');
+  const body = document.body;
+  let customCursorEnabled = true;
+
+  function setCursorState(enabled) {
+    customCursorEnabled = enabled;
+    if (enabled) {
+      body.classList.add('hide-cursor');
+      document.getElementById('cursor').style.display = '';
+      cursorToggle.textContent = 'Disable Custom Cursor';
+    } else {
+      body.classList.remove('hide-cursor');
+      document.getElementById('cursor').style.display = 'none';
+      cursorToggle.textContent = 'Enable Custom Cursor';
+    }
+  }
+
+  // Initialize with custom cursor enabled
+  setCursorState(true);
+
+  cursorToggle.addEventListener('click', () => {
+    setCursorState(!customCursorEnabled);
+  });
+
   // cursor
   const cur = document.getElementById('cursor');
   document.addEventListener('mousemove', e => {
+    if (!customCursorEnabled) return;
     cur.style.left = e.clientX + 'px';
     cur.style.top  = e.clientY + 'px';
   });
@@ -445,6 +164,8 @@
 
   const container = document.getElementById('floaters');
 
+  const MAX_SNIPPETS = 40; // Limit the number of floating snippets
+
   function spawnSnippet() {
     const el = document.createElement('div');
     el.className = 'snippet';
@@ -455,6 +176,12 @@
     el.style.animationDelay = (Math.random() * -dur) + 's';
     el.style.fontSize = (9 + Math.random() * 4) + 'px';
     container.appendChild(el);
+
+    // Remove oldest snippet if exceeding max allowed
+    if (container.childNodes.length > MAX_SNIPPETS) {
+      container.removeChild(container.firstChild);
+    }
+
     setTimeout(() => el.remove(), (dur + 2) * 1000);
   }
 
