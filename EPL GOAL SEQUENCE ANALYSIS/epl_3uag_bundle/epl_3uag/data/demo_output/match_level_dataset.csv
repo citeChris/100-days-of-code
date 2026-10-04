@@ -1,0 +1,271 @@
+match_id,season,date,home_team,away_team,home_goals,away_goals,goal_sequence,has_three_uag,three_uag_details
+2021_0000,2021,2021-08-14,Newcastle,Chelsea,1,3,A→A→H→A,0,[]
+2021_0028,2021,2021-08-14,Man United,Tottenham,0,0,,0,[]
+2021_0056,2021,2021-08-14,Man United,Arsenal,1,0,H,0,[]
+2021_0084,2021,2021-08-14,Man City,Brighton,3,0,H→H→H,1,"[{""team"": ""H"", ""start_minute"": 4, ""trigger_minute"": 78, ""run_length"": 3, ""goals"": [{""minute"": 4, ""player"": ""MAN_02""}, {""minute"": 56, ""player"": ""MAN_06""}, {""minute"": 78, ""player"": ""MAN_05""}]}]"
+2021_0001,2021,2021-08-15,Chelsea,Man City,3,1,A→H→H→H,1,"[{""team"": ""H"", ""start_minute"": 18, ""trigger_minute"": 97, ""run_length"": 3, ""goals"": [{""minute"": 18, ""player"": ""CHE_09""}, {""minute"": 64, ""player"": ""CHE_02""}, {""minute"": 97, ""player"": ""CHE_01""}]}]"
+2021_0029,2021,2021-08-15,West Ham,Brentford,0,1,A,0,[]
+2021_0057,2021,2021-08-15,Brighton,Tottenham,0,2,A→A,0,[]
+2021_0085,2021,2021-08-15,Man United,Newcastle,1,2,A→H→A,0,[]
+2021_0002,2021,2021-08-16,West Ham,Brighton,2,0,H→H,0,[]
+2021_0030,2021,2021-08-16,Brentford,Chelsea,3,1,H→H→H→A,1,"[{""team"": ""H"", ""start_minute"": 1, ""trigger_minute"": 34, ""run_length"": 3, ""goals"": [{""minute"": 1, ""player"": ""BRE_06""}, {""minute"": 17, ""player"": ""BRE_11""}, {""minute"": 34, ""player"": ""BRE_03""}]}]"
+2021_0058,2021,2021-08-16,Chelsea,Liverpool,4,1,H→H→H→H→A,1,"[{""team"": ""H"", ""start_minute"": 10, ""trigger_minute"": 51, ""run_length"": 4, ""goals"": [{""minute"": 10, ""player"": ""CHE_10""}, {""minute"": 40, ""player"": ""CHE_10""}, {""minute"": 51, ""player"": ""CHE_04""}, {""minute"": 87, ""player"": ""CHE_07""}]}]"
+2021_0086,2021,2021-08-16,Tottenham,Newcastle,3,2,H→A→H→H→A,0,[]
+2021_0003,2021,2021-08-17,Arsenal,Liverpool,1,2,A→H→A,0,[]
+2021_0031,2021,2021-08-17,Newcastle,Brentford,2,0,H→H,0,[]
+2021_0059,2021,2021-08-17,Brentford,Tottenham,1,1,A→H,0,[]
+2021_0087,2021,2021-08-17,Arsenal,Man United,1,1,A→H,0,[]
+2021_0004,2021,2021-08-18,West Ham,Man City,1,2,H→A→A,0,[]
+2021_0032,2021,2021-08-18,Newcastle,West Ham,2,0,H→H,0,[]
+2021_0060,2021,2021-08-18,Liverpool,West Ham,2,1,H→A→H,0,[]
+2021_0088,2021,2021-08-18,Chelsea,West Ham,1,2,H→A→A,0,[]
+2021_0005,2021,2021-08-19,West Ham,Liverpool,2,1,A→H→H,0,[]
+2021_0033,2021,2021-08-19,Brentford,West Ham,0,0,,0,[]
+2021_0061,2021,2021-08-19,Brentford,Man City,3,2,H→H→H→A→A,1,"[{""team"": ""H"", ""start_minute"": 12, ""trigger_minute"": 38, ""run_length"": 3, ""goals"": [{""minute"": 12, ""player"": ""BRE_07""}, {""minute"": 25, ""player"": ""BRE_09""}, {""minute"": 38, ""player"": ""BRE_11""}]}]"
+2021_0089,2021,2021-08-19,West Ham,Tottenham,0,1,A,0,[]
+2021_0006,2021,2021-08-20,Chelsea,Brighton,0,2,A→A,0,[]
+2021_0034,2021,2021-08-20,Liverpool,Arsenal,0,2,A→A,0,[]
+2021_0062,2021,2021-08-20,Brighton,Brentford,2,0,H→H,0,[]
+2021_0007,2021,2021-08-21,Man City,Newcastle,1,1,A→H,0,[]
+2021_0035,2021,2021-08-21,West Ham,Man United,3,1,H→H→A→H,0,[]
+2021_0063,2021,2021-08-21,Liverpool,Newcastle,2,2,H→A→H→A,0,[]
+2021_0008,2021,2021-08-22,Newcastle,Brighton,2,2,A→H→A→H,0,[]
+2021_0036,2021,2021-08-22,Chelsea,Tottenham,1,1,A→H,0,[]
+2021_0064,2021,2021-08-22,Arsenal,Chelsea,3,2,H→H→H→A→A,1,"[{""team"": ""H"", ""start_minute"": 12, ""trigger_minute"": 38, ""run_length"": 3, ""goals"": [{""minute"": 12, ""player"": ""ARS_07""}, {""minute"": 25, ""player"": ""ARS_09""}, {""minute"": 38, ""player"": ""ARS_11""}]}]"
+2021_0009,2021,2021-08-23,Man United,West Ham,2,0,H→H,0,[]
+2021_0037,2021,2021-08-23,Tottenham,West Ham,0,1,A,0,[]
+2021_0065,2021,2021-08-23,Brentford,Newcastle,2,1,H→H→A,0,[]
+2021_0010,2021,2021-08-24,Chelsea,Arsenal,3,2,H→H→H→A→A,1,"[{""team"": ""H"", ""start_minute"": 12, ""trigger_minute"": 38, ""run_length"": 3, ""goals"": [{""minute"": 12, ""player"": ""CHE_07""}, {""minute"": 25, ""player"": ""CHE_09""}, {""minute"": 38, ""player"": ""CHE_11""}]}]"
+2021_0038,2021,2021-08-24,Liverpool,Brentford,2,2,H→A→H→A,0,[]
+2021_0066,2021,2021-08-24,Tottenham,Chelsea,2,0,H→H,0,[]
+2021_0011,2021,2021-08-25,Man City,Arsenal,1,0,H,0,[]
+2021_0039,2021,2021-08-25,Liverpool,Man United,1,3,A→A→H→A,0,[]
+2021_0067,2021,2021-08-25,West Ham,Newcastle,2,1,H→A→H,0,[]
+2021_0012,2021,2021-08-26,Brighton,Liverpool,1,1,H→A,0,[]
+2021_0040,2021,2021-08-26,Newcastle,Liverpool,4,1,A→H→H→H→H,1,"[{""team"": ""H"", ""start_minute"": 80, ""trigger_minute"": 86, ""run_length"": 4, ""goals"": [{""minute"": 80, ""player"": ""NEW_06""}, {""minute"": 85, ""player"": ""NEW_02""}, {""minute"": 86, ""player"": ""NEW_06""}, {""minute"": 93, ""player"": ""NEW_05""}]}]"
+2021_0068,2021,2021-08-26,Brentford,Arsenal,2,2,A→A→H→H,0,[]
+2021_0013,2021,2021-08-27,Liverpool,Tottenham,0,0,,0,[]
+2021_0041,2021,2021-08-27,Brentford,Liverpool,1,2,A→H→A,0,[]
+2021_0069,2021,2021-08-27,Brentford,Brighton,2,1,H→A→H,0,[]
+2021_0014,2021,2021-08-28,West Ham,Chelsea,3,1,H→H→H→A,1,"[{""team"": ""H"", ""start_minute"": 13, ""trigger_minute"": 56, ""run_length"": 3, ""goals"": [{""minute"": 13, ""player"": ""WES_11""}, {""minute"": 55, ""player"": ""WES_07""}, {""minute"": 56, ""player"": ""WES_06""}]}]"
+2021_0042,2021,2021-08-28,Brighton,Arsenal,1,0,H,0,[]
+2021_0070,2021,2021-08-28,Man City,Tottenham,1,0,H,0,[]
+2021_0015,2021,2021-08-29,Man City,Chelsea,2,1,H→H→A,0,[]
+2021_0043,2021,2021-08-29,Arsenal,Brighton,2,1,H→H→A,0,[]
+2021_0071,2021,2021-08-29,Newcastle,Man United,0,0,,0,[]
+2021_0016,2021,2021-08-30,Man City,Liverpool,0,0,,0,[]
+2021_0044,2021,2021-08-30,Man United,Brentford,1,1,A→H,0,[]
+2021_0072,2021,2021-08-30,Tottenham,Liverpool,1,3,A→A→A→H,1,"[{""team"": ""A"", ""start_minute"": 14, ""trigger_minute"": 74, ""run_length"": 3, ""goals"": [{""minute"": 14, ""player"": ""LIV_01""}, {""minute"": 61, ""player"": ""LIV_08""}, {""minute"": 74, ""player"": ""LIV_05""}]}]"
+2021_0017,2021,2021-08-31,Tottenham,Man City,2,2,H→A→H→A,0,[]
+2021_0045,2021,2021-08-31,Brighton,Man City,1,0,H,0,[]
+2021_0073,2021,2021-08-31,Man City,Brentford,3,2,H→H→H→A→A,1,"[{""team"": ""H"", ""start_minute"": 12, ""trigger_minute"": 38, ""run_length"": 3, ""goals"": [{""minute"": 12, ""player"": ""MAN_07""}, {""minute"": 25, ""player"": ""MAN_09""}, {""minute"": 38, ""player"": ""MAN_11""}]}]"
+2021_0018,2021,2021-08-32,West Ham,Arsenal,1,1,H→A,0,[]
+2021_0046,2021,2021-08-32,Arsenal,Man City,2,3,H→H→A→A→A,1,"[{""team"": ""A"", ""start_minute"": 55, ""trigger_minute"": 97, ""run_length"": 3, ""goals"": [{""minute"": 55, ""player"": ""MAN_04""}, {""minute"": 89, ""player"": ""MAN_01""}, {""minute"": 97, ""player"": ""MAN_02""}]}]"
+2021_0074,2021,2021-08-32,Man City,West Ham,1,0,H,0,[]
+2021_0019,2021,2021-08-33,Man United,Chelsea,2,3,A→H→A→H→A,0,[]
+2021_0047,2021,2021-08-33,Chelsea,Brentford,0,2,A→A,0,[]
+2021_0075,2021,2021-08-33,Newcastle,Tottenham,2,1,H→A→H,0,[]
+2021_0020,2021,2021-08-34,Tottenham,Arsenal,0,1,A,0,[]
+2021_0048,2021,2021-08-34,Tottenham,Brentford,6,3,A→H→A→A→H→H→H→H→H,1,"[{""team"": ""H"", ""start_minute"": 58, ""trigger_minute"": 81, ""run_length"": 5, ""goals"": [{""minute"": 58, ""player"": ""TOT_05""}, {""minute"": 67, ""player"": ""TOT_08""}, {""minute"": 81, ""player"": ""TOT_04""}, {""minute"": 82, ""player"": ""TOT_05""}, {""minute"": 97, ""player"": ""TOT_04""}]}]"
+2021_0076,2021,2021-08-34,Brighton,West Ham,2,2,A→H→H→A,0,[]
+2021_0021,2021,2021-08-35,Brighton,Newcastle,0,2,A→A,0,[]
+2021_0049,2021,2021-08-35,Newcastle,Arsenal,2,0,H→H,0,[]
+2021_0077,2021,2021-08-35,Arsenal,Tottenham,3,0,H→H→H,1,"[{""team"": ""H"", ""start_minute"": 21, ""trigger_minute"": 85, ""run_length"": 3, ""goals"": [{""minute"": 21, ""player"": ""ARS_04""}, {""minute"": 23, ""player"": ""ARS_09""}, {""minute"": 85, ""player"": ""ARS_02""}]}]"
+2021_0022,2021,2021-08-36,Brentford,Man United,0,1,A,0,[]
+2021_0050,2021,2021-08-36,Liverpool,Brighton,0,1,A,0,[]
+2021_0078,2021,2021-08-36,Liverpool,Chelsea,0,0,,0,[]
+2021_0023,2021,2021-08-37,Man United,Liverpool,2,2,H→A→A→H,0,[]
+2021_0051,2021,2021-08-37,Brighton,Man United,0,2,A→A,0,[]
+2021_0079,2021,2021-08-37,Tottenham,Man United,2,0,H→H,0,[]
+2021_0024,2021,2021-08-38,Man United,Brighton,1,1,H→A,0,[]
+2021_0052,2021,2021-08-38,Man City,Man United,2,2,A→A→H→H,0,[]
+2021_0080,2021,2021-08-38,Chelsea,Man United,0,0,,0,[]
+2021_0025,2021,2021-08-39,Arsenal,Brentford,0,0,,0,[]
+2021_0053,2021,2021-08-39,Arsenal,Newcastle,1,4,A→A→A→H→A,1,"[{""team"": ""A"", ""start_minute"": 4, ""trigger_minute"": 76, ""run_length"": 3, ""goals"": [{""minute"": 4, ""player"": ""NEW_07""}, {""minute"": 11, ""player"": ""NEW_11""}, {""minute"": 76, ""player"": ""NEW_10""}]}]"
+2021_0081,2021,2021-08-39,Man United,Man City,1,2,H→A→A,0,[]
+2021_0026,2021,2021-08-40,Tottenham,Brighton,2,2,A→H→H→A,0,[]
+2021_0054,2021,2021-08-40,Arsenal,West Ham,2,0,H→H,0,[]
+2021_0082,2021,2021-08-40,Chelsea,Newcastle,1,0,H,0,[]
+2021_0027,2021,2021-08-41,Newcastle,Man City,1,1,H→A,0,[]
+2021_0055,2021,2021-08-41,Brighton,Chelsea,2,3,A→H→A→A→H,0,[]
+2021_0083,2021,2021-08-41,Liverpool,Man City,2,0,H→H,0,[]
+2022_0000,2022,2022-08-14,Newcastle,Tottenham,0,1,A,0,[]
+2022_0028,2022,2022-08-14,Man United,Brighton,2,1,H→H→A,0,[]
+2022_0056,2022,2022-08-14,Tottenham,Newcastle,1,1,A→H,0,[]
+2022_0084,2022,2022-08-14,Tottenham,West Ham,3,0,H→H→H,1,"[{""team"": ""H"", ""start_minute"": 47, ""trigger_minute"": 83, ""run_length"": 3, ""goals"": [{""minute"": 47, ""player"": ""TOT_07""}, {""minute"": 73, ""player"": ""TOT_01""}, {""minute"": 83, ""player"": ""TOT_06""}]}]"
+2022_0001,2022,2022-08-15,Liverpool,Arsenal,2,1,A→H→H,0,[]
+2022_0029,2022,2022-08-15,Liverpool,Chelsea,4,1,H→A→H→H→H,1,"[{""team"": ""H"", ""start_minute"": 44, ""trigger_minute"": 94, ""run_length"": 3, ""goals"": [{""minute"": 44, ""player"": ""LIV_08""}, {""minute"": 52, ""player"": ""LIV_07""}, {""minute"": 94, ""player"": ""LIV_02""}]}]"
+2022_0057,2022,2022-08-15,Man City,Brentford,3,2,H→H→H→A→A,1,"[{""team"": ""H"", ""start_minute"": 12, ""trigger_minute"": 38, ""run_length"": 3, ""goals"": [{""minute"": 12, ""player"": ""MAN_07""}, {""minute"": 25, ""player"": ""MAN_09""}, {""minute"": 38, ""player"": ""MAN_11""}]}]"
+2022_0085,2022,2022-08-15,Chelsea,Brentford,3,2,A→H→H→A→H,0,[]
+2022_0002,2022,2022-08-16,Tottenham,Arsenal,2,3,H→A→A→H→A,0,[]
+2022_0030,2022,2022-08-16,West Ham,Brentford,2,1,H→H→A,0,[]
+2022_0058,2022,2022-08-16,Brighton,Liverpool,0,2,A→A,0,[]
+2022_0086,2022,2022-08-16,Tottenham,Man City,1,0,H,0,[]
+2022_0003,2022,2022-08-17,West Ham,Newcastle,2,0,H→H,0,[]
+2022_0031,2022,2022-08-17,Chelsea,Arsenal,3,2,H→H→H→A→A,1,"[{""team"": ""H"", ""start_minute"": 12, ""trigger_minute"": 38, ""run_length"": 3, ""goals"": [{""minute"": 12, ""player"": ""CHE_07""}, {""minute"": 25, ""player"": ""CHE_09""}, {""minute"": 38, ""player"": ""CHE_11""}]}]"
+2022_0059,2022,2022-08-17,Brighton,Chelsea,2,1,H→A→H,0,[]
+2022_0087,2022,2022-08-17,Man United,Brentford,0,3,A→A→A,1,"[{""team"": ""A"", ""start_minute"": 18, ""trigger_minute"": 92, ""run_length"": 3, ""goals"": [{""minute"": 18, ""player"": ""BRE_02""}, {""minute"": 58, ""player"": ""BRE_03""}, {""minute"": 92, ""player"": ""BRE_08""}]}]"
+2022_0004,2022,2022-08-18,Arsenal,Newcastle,2,0,H→H,0,[]
+2022_0032,2022,2022-08-18,Liverpool,Brighton,3,1,A→H→H→H,1,"[{""team"": ""H"", ""start_minute"": 46, ""trigger_minute"": 97, ""run_length"": 3, ""goals"": [{""minute"": 46, ""player"": ""LIV_11""}, {""minute"": 93, ""player"": ""LIV_01""}, {""minute"": 97, ""player"": ""LIV_07""}]}]"
+2022_0060,2022,2022-08-18,Brighton,Man United,2,1,H→A→H,0,[]
+2022_0088,2022,2022-08-18,Man City,Newcastle,6,0,H→H→H→H→H→H,1,"[{""team"": ""H"", ""start_minute"": 16, ""trigger_minute"": 23, ""run_length"": 6, ""goals"": [{""minute"": 16, ""player"": ""MAN_04""}, {""minute"": 18, ""player"": ""MAN_04""}, {""minute"": 23, ""player"": ""MAN_06""}, {""minute"": 39, ""player"": ""MAN_03""}, {""minute"": 66, ""player"": ""MAN_04""}, {""minute"": 92, ""player"": ""MAN_11""}]}]"
+2022_0005,2022,2022-08-19,Man United,Arsenal,1,0,H,0,[]
+2022_0033,2022,2022-08-19,Brentford,Liverpool,1,1,A→H,0,[]
+2022_0061,2022,2022-08-19,Brentford,Arsenal,0,0,,0,[]
+2022_0089,2022,2022-08-19,Arsenal,West Ham,1,1,H→A,0,[]
+2022_0006,2022,2022-08-20,Brentford,Tottenham,2,0,H→H,0,[]
+2022_0034,2022,2022-08-20,Newcastle,Liverpool,3,5,A→H→H→A→A→A→H→A,1,"[{""team"": ""A"", ""start_minute"": 19, ""trigger_minute"": 44, ""run_length"": 3, ""goals"": [{""minute"": 19, ""player"": ""LIV_10""}, {""minute"": 35, ""player"": ""LIV_05""}, {""minute"": 44, ""player"": ""LIV_06""}]}]"
+2022_0062,2022,2022-08-20,Brentford,West Ham,2,2,A→A→H→H,0,[]
+2022_0007,2022,2022-08-21,West Ham,Brighton,3,1,H→H→H→A,1,"[{""team"": ""H"", ""start_minute"": 39, ""trigger_minute"": 55, ""run_length"": 3, ""goals"": [{""minute"": 39, ""player"": ""WES_11""}, {""minute"": 45, ""player"": ""WES_10""}, {""minute"": 55, ""player"": ""WES_05""}]}]"
+2022_0035,2022,2022-08-21,Brighton,Man City,0,2,A→A,0,[]
+2022_0063,2022,2022-08-21,Brighton,West Ham,1,1,A→H,0,[]
+2022_0008,2022,2022-08-22,Newcastle,Brighton,0,1,A,0,[]
+2022_0036,2022,2022-08-22,Man City,Chelsea,1,1,A→H,0,[]
+2022_0064,2022,2022-08-22,Tottenham,Brighton,1,1,A→H,0,[]
+2022_0009,2022,2022-08-23,Arsenal,Man City,3,2,A→H→H→A→H,0,[]
+2022_0037,2022,2022-08-23,Man United,Newcastle,0,1,A,0,[]
+2022_0065,2022,2022-08-23,Man United,Liverpool,2,2,A→A→H→H,0,[]
+2022_0010,2022,2022-08-24,Brighton,Newcastle,0,0,,0,[]
+2022_0038,2022,2022-08-24,Newcastle,Man United,1,1,A→H,0,[]
+2022_0066,2022,2022-08-24,Liverpool,Tottenham,1,3,H→A→A→A,1,"[{""team"": ""A"", ""start_minute"": 35, ""trigger_minute"": 66, ""run_length"": 3, ""goals"": [{""minute"": 35, ""player"": ""TOT_08""}, {""minute"": 56, ""player"": ""TOT_02""}, {""minute"": 66, ""player"": ""TOT_03""}]}]"
+2022_0011,2022,2022-08-25,West Ham,Man City,1,2,H→A→A,0,[]
+2022_0039,2022,2022-08-25,Tottenham,Liverpool,1,2,H→A→A,0,[]
+2022_0067,2022,2022-08-25,West Ham,Tottenham,1,1,H→A,0,[]
+2022_0012,2022,2022-08-26,Tottenham,Chelsea,0,1,A,0,[]
+2022_0040,2022,2022-08-26,West Ham,Liverpool,0,3,A→A→A,1,"[{""team"": ""A"", ""start_minute"": 16, ""trigger_minute"": 64, ""run_length"": 3, ""goals"": [{""minute"": 16, ""player"": ""LIV_01""}, {""minute"": 23, ""player"": ""LIV_03""}, {""minute"": 64, ""player"": ""LIV_07""}]}]"
+2022_0068,2022,2022-08-26,West Ham,Chelsea,1,2,H→A→A,0,[]
+2022_0013,2022,2022-08-27,Brentford,Man United,1,0,H,0,[]
+2022_0041,2022,2022-08-27,Liverpool,Man United,2,2,A→H→A→H,0,[]
+2022_0069,2022,2022-08-27,Chelsea,West Ham,2,0,H→H,0,[]
+2022_0014,2022,2022-08-28,Newcastle,Man City,3,3,H→H→A→A→H→A,0,[]
+2022_0042,2022,2022-08-28,Arsenal,Chelsea,3,2,H→H→H→A→A,1,"[{""team"": ""H"", ""start_minute"": 12, ""trigger_minute"": 38, ""run_length"": 3, ""goals"": [{""minute"": 12, ""player"": ""ARS_07""}, {""minute"": 25, ""player"": ""ARS_09""}, {""minute"": 38, ""player"": ""ARS_11""}]}]"
+2022_0070,2022,2022-08-28,Man City,Brighton,0,0,,0,[]
+2022_0015,2022,2022-08-29,Newcastle,Chelsea,1,1,A→H,0,[]
+2022_0043,2022,2022-08-29,Newcastle,Arsenal,1,1,A→H,0,[]
+2022_0071,2022,2022-08-29,Chelsea,Man United,1,2,H→A→A,0,[]
+2022_0016,2022,2022-08-30,Man City,Tottenham,2,2,H→H→A→A,0,[]
+2022_0044,2022,2022-08-30,West Ham,Arsenal,4,1,A→H→H→H→H,1,"[{""team"": ""H"", ""start_minute"": 51, ""trigger_minute"": 76, ""run_length"": 4, ""goals"": [{""minute"": 51, ""player"": ""WES_05""}, {""minute"": 68, ""player"": ""WES_02""}, {""minute"": 76, ""player"": ""WES_07""}, {""minute"": 96, ""player"": ""WES_06""}]}]"
+2022_0072,2022,2022-08-30,Brighton,Arsenal,1,1,H→A,0,[]
+2022_0017,2022,2022-08-31,Brentford,Man City,3,2,H→H→H→A→A,1,"[{""team"": ""H"", ""start_minute"": 12, ""trigger_minute"": 38, ""run_length"": 3, ""goals"": [{""minute"": 12, ""player"": ""BRE_07""}, {""minute"": 25, ""player"": ""BRE_09""}, {""minute"": 38, ""player"": ""BRE_11""}]}]"
+2022_0045,2022,2022-08-31,Liverpool,West Ham,1,2,A→H→A,0,[]
+2022_0073,2022,2022-08-31,Tottenham,Man United,3,0,H→H→H,1,"[{""team"": ""H"", ""start_minute"": 24, ""trigger_minute"": 74, ""run_length"": 3, ""goals"": [{""minute"": 24, ""player"": ""TOT_11""}, {""minute"": 46, ""player"": ""TOT_04""}, {""minute"": 74, ""player"": ""TOT_07""}]}]"
+2022_0018,2022,2022-08-32,Chelsea,Newcastle,2,0,H→H,0,[]
+2022_0046,2022,2022-08-32,Brighton,Tottenham,0,0,,0,[]
+2022_0074,2022,2022-08-32,Arsenal,Liverpool,2,3,H→A→H→A→A,0,[]
+2022_0019,2022,2022-08-33,Liverpool,Brentford,0,1,A,0,[]
+2022_0047,2022,2022-08-33,Liverpool,Man City,0,0,,0,[]
+2022_0075,2022,2022-08-33,Brentford,Newcastle,1,0,H,0,[]
+2022_0020,2022,2022-08-34,Man City,West Ham,3,1,H→A→H→H,0,[]
+2022_0048,2022,2022-08-34,Arsenal,Tottenham,1,2,A→H→A,0,[]
+2022_0076,2022,2022-08-34,Newcastle,West Ham,0,2,A→A,0,[]
+2022_0021,2022,2022-08-35,Newcastle,Brentford,1,1,H→A,0,[]
+2022_0049,2022,2022-08-35,Arsenal,Brentford,3,0,H→H→H,1,"[{""team"": ""H"", ""start_minute"": 9, ""trigger_minute"": 57, ""run_length"": 3, ""goals"": [{""minute"": 9, ""player"": ""ARS_08""}, {""minute"": 39, ""player"": ""ARS_05""}, {""minute"": 57, ""player"": ""ARS_11""}]}]"
+2022_0077,2022,2022-08-35,Liverpool,Newcastle,0,2,A→A,0,[]
+2022_0022,2022,2022-08-36,Arsenal,Brighton,2,1,H→H→A,0,[]
+2022_0050,2022,2022-08-36,Man City,Arsenal,1,0,H,0,[]
+2022_0078,2022,2022-08-36,Man United,Tottenham,2,0,H→H,0,[]
+2022_0023,2022,2022-08-37,Brighton,Brentford,2,2,H→A→H→A,0,[]
+2022_0051,2022,2022-08-37,Man United,West Ham,0,1,A,0,[]
+2022_0079,2022,2022-08-37,West Ham,Man United,3,1,H→H→A→H,0,[]
+2022_0024,2022,2022-08-38,Brentford,Brighton,3,4,H→H→A→A→H→A→A,0,[]
+2022_0052,2022,2022-08-38,Tottenham,Brentford,2,3,A→H→A→H→A,0,[]
+2022_0080,2022,2022-08-38,Arsenal,Man United,4,1,H→H→H→A→H,1,"[{""team"": ""H"", ""start_minute"": 11, ""trigger_minute"": 67, ""run_length"": 3, ""goals"": [{""minute"": 11, ""player"": ""ARS_07""}, {""minute"": 11, ""player"": ""ARS_07""}, {""minute"": 67, ""player"": ""ARS_05""}]}]"
+2022_0025,2022,2022-08-39,Chelsea,Man City,2,2,H→A→H→A,0,[]
+2022_0053,2022,2022-08-39,Chelsea,Tottenham,0,2,A→A,0,[]
+2022_0081,2022,2022-08-39,Chelsea,Brighton,1,1,A→H,0,[]
+2022_0026,2022,2022-08-40,Man United,Man City,2,1,A→H→H,0,[]
+2022_0054,2022,2022-08-40,Man City,Man United,1,1,H→A,0,[]
+2022_0082,2022,2022-08-40,Man City,Liverpool,1,3,H→A→A→A,1,"[{""team"": ""A"", ""start_minute"": 52, ""trigger_minute"": 86, ""run_length"": 3, ""goals"": [{""minute"": 52, ""player"": ""LIV_06""}, {""minute"": 66, ""player"": ""LIV_11""}, {""minute"": 86, ""player"": ""LIV_11""}]}]"
+2022_0027,2022,2022-08-41,Brentford,Chelsea,1,0,H,0,[]
+2022_0055,2022,2022-08-41,Chelsea,Liverpool,2,0,H→H,0,[]
+2022_0083,2022,2022-08-41,Man United,Chelsea,0,0,,0,[]
+2023_0000,2023,2023-08-14,Chelsea,Man United,1,0,H,0,[]
+2023_0028,2023,2023-08-14,Man City,Man United,1,1,A→H,0,[]
+2023_0056,2023,2023-08-14,Man United,Brighton,2,1,H→A→H,0,[]
+2023_0084,2023,2023-08-14,Brighton,Arsenal,2,1,H→H→A,0,[]
+2023_0001,2023,2023-08-15,Man United,Newcastle,3,1,A→H→H→H,1,"[{""team"": ""H"", ""start_minute"": 35, ""trigger_minute"": 60, ""run_length"": 3, ""goals"": [{""minute"": 35, ""player"": ""MAN_08""}, {""minute"": 41, ""player"": ""MAN_04""}, {""minute"": 60, ""player"": ""MAN_02""}]}]"
+2023_0029,2023,2023-08-15,Brentford,Newcastle,1,1,H→A,0,[]
+2023_0057,2023,2023-08-15,Liverpool,Brighton,1,3,A→A→H→A,0,[]
+2023_0085,2023,2023-08-15,Brighton,Liverpool,0,2,A→A,0,[]
+2023_0002,2023,2023-08-16,Newcastle,Man City,0,0,,0,[]
+2023_0030,2023,2023-08-16,Man United,Tottenham,4,1,H→H→H→A→H,1,"[{""team"": ""H"", ""start_minute"": 43, ""trigger_minute"": 64, ""run_length"": 3, ""goals"": [{""minute"": 43, ""player"": ""MAN_05""}, {""minute"": 59, ""player"": ""MAN_11""}, {""minute"": 64, ""player"": ""MAN_03""}]}]"
+2023_0058,2023,2023-08-16,Chelsea,West Ham,3,0,H→H→H,1,"[{""team"": ""H"", ""start_minute"": 42, ""trigger_minute"": 69, ""run_length"": 3, ""goals"": [{""minute"": 42, ""player"": ""CHE_05""}, {""minute"": 49, ""player"": ""CHE_08""}, {""minute"": 69, ""player"": ""CHE_11""}]}]"
+2023_0086,2023,2023-08-16,Brentford,Chelsea,1,2,H→A→A,0,[]
+2023_0003,2023,2023-08-17,West Ham,Man United,2,1,A→H→H,0,[]
+2023_0031,2023,2023-08-17,West Ham,Brentford,1,1,H→A,0,[]
+2023_0059,2023,2023-08-17,Chelsea,Arsenal,3,2,H→H→H→A→A,1,"[{""team"": ""H"", ""start_minute"": 12, ""trigger_minute"": 38, ""run_length"": 3, ""goals"": [{""minute"": 12, ""player"": ""CHE_07""}, {""minute"": 25, ""player"": ""CHE_09""}, {""minute"": 38, ""player"": ""CHE_11""}]}]"
+2023_0087,2023,2023-08-17,Newcastle,Arsenal,1,2,A→A→H,0,[]
+2023_0004,2023,2023-08-18,Man City,Newcastle,2,1,A→H→H,0,[]
+2023_0032,2023,2023-08-18,West Ham,Brighton,0,1,A,0,[]
+2023_0060,2023,2023-08-18,Newcastle,Man United,1,1,H→A,0,[]
+2023_0088,2023,2023-08-18,Newcastle,West Ham,3,4,A→H→H→A→A→A→H,1,"[{""team"": ""A"", ""start_minute"": 83, ""trigger_minute"": 83, ""run_length"": 3, ""goals"": [{""minute"": 83, ""player"": ""WES_10""}, {""minute"": 83, ""player"": ""WES_11""}, {""minute"": 83, ""player"": ""WES_07""}]}]"
+2023_0005,2023,2023-08-19,Tottenham,Arsenal,1,2,A→H→A,0,[]
+2023_0033,2023,2023-08-19,Arsenal,Liverpool,0,4,A→A→A→A,1,"[{""team"": ""A"", ""start_minute"": 24, ""trigger_minute"": 62, ""run_length"": 4, ""goals"": [{""minute"": 24, ""player"": ""LIV_03""}, {""minute"": 32, ""player"": ""LIV_01""}, {""minute"": 62, ""player"": ""LIV_06""}, {""minute"": 86, ""player"": ""LIV_02""}]}]"
+2023_0061,2023,2023-08-19,Liverpool,Newcastle,1,1,H→A,0,[]
+2023_0089,2023,2023-08-19,Arsenal,Brentford,3,0,H→H→H,1,"[{""team"": ""H"", ""start_minute"": 29, ""trigger_minute"": 96, ""run_length"": 3, ""goals"": [{""minute"": 29, ""player"": ""ARS_09""}, {""minute"": 72, ""player"": ""ARS_10""}, {""minute"": 96, ""player"": ""ARS_09""}]}]"
+2023_0006,2023,2023-08-20,Newcastle,Brentford,0,0,,0,[]
+2023_0034,2023,2023-08-20,Arsenal,Man City,1,2,A→A→H,0,[]
+2023_0062,2023,2023-08-20,Chelsea,Man City,3,1,H→A→H→H,0,[]
+2023_0007,2023,2023-08-21,Man United,Chelsea,1,0,H,0,[]
+2023_0035,2023,2023-08-21,Man United,Liverpool,1,0,H,0,[]
+2023_0063,2023,2023-08-21,Liverpool,West Ham,3,1,A→H→H→H,1,"[{""team"": ""H"", ""start_minute"": 63, ""trigger_minute"": 93, ""run_length"": 3, ""goals"": [{""minute"": 63, ""player"": ""LIV_03""}, {""minute"": 70, ""player"": ""LIV_11""}, {""minute"": 93, ""player"": ""LIV_09""}]}]"
+2023_0008,2023,2023-08-22,Newcastle,Chelsea,1,0,H,0,[]
+2023_0036,2023,2023-08-22,Liverpool,Arsenal,1,2,H→A→A,0,[]
+2023_0064,2023,2023-08-22,Tottenham,Brentford,0,4,A→A→A→A,1,"[{""team"": ""A"", ""start_minute"": 2, ""trigger_minute"": 65, ""run_length"": 4, ""goals"": [{""minute"": 2, ""player"": ""BRE_04""}, {""minute"": 9, ""player"": ""BRE_03""}, {""minute"": 65, ""player"": ""BRE_08""}, {""minute"": 81, ""player"": ""BRE_04""}]}]"
+2023_0009,2023,2023-08-23,Arsenal,Tottenham,2,2,H→H→A→A,0,[]
+2023_0037,2023,2023-08-23,Brighton,Man United,0,0,,0,[]
+2023_0065,2023,2023-08-23,Liverpool,Tottenham,2,1,H→H→A,0,[]
+2023_0010,2023,2023-08-24,Man City,Brighton,0,1,A,0,[]
+2023_0038,2023,2023-08-24,Brentford,Man City,3,2,H→H→H→A→A,1,"[{""team"": ""H"", ""start_minute"": 12, ""trigger_minute"": 38, ""run_length"": 3, ""goals"": [{""minute"": 12, ""player"": ""BRE_07""}, {""minute"": 25, ""player"": ""BRE_09""}, {""minute"": 38, ""player"": ""BRE_11""}]}]"
+2023_0066,2023,2023-08-24,Chelsea,Brighton,0,1,A,0,[]
+2023_0011,2023,2023-08-25,Tottenham,West Ham,0,1,A,0,[]
+2023_0039,2023,2023-08-25,Tottenham,Brighton,0,2,A→A,0,[]
+2023_0067,2023,2023-08-25,Arsenal,Brighton,2,1,H→H→A,0,[]
+2023_0012,2023,2023-08-26,West Ham,Arsenal,2,1,A→H→H,0,[]
+2023_0040,2023,2023-08-26,Man City,Liverpool,4,2,H→A→H→H→H→A,1,"[{""team"": ""H"", ""start_minute"": 47, ""trigger_minute"": 73, ""run_length"": 3, ""goals"": [{""minute"": 47, ""player"": ""MAN_02""}, {""minute"": 65, ""player"": ""MAN_04""}, {""minute"": 73, ""player"": ""MAN_02""}]}]"
+2023_0068,2023,2023-08-26,Tottenham,Liverpool,2,1,H→H→A,0,[]
+2023_0013,2023,2023-08-27,Arsenal,Man United,2,1,A→H→H,0,[]
+2023_0041,2023,2023-08-27,Man United,West Ham,1,0,H,0,[]
+2023_0069,2023,2023-08-27,Man City,Chelsea,2,2,H→H→A→A,0,[]
+2023_0014,2023,2023-08-28,Brighton,Newcastle,0,3,A→A→A,1,"[{""team"": ""A"", ""start_minute"": 74, ""trigger_minute"": 93, ""run_length"": 3, ""goals"": [{""minute"": 74, ""player"": ""NEW_04""}, {""minute"": 75, ""player"": ""NEW_08""}, {""minute"": 93, ""player"": ""NEW_01""}]}]"
+2023_0042,2023,2023-08-28,Brentford,Arsenal,2,0,H→H,0,[]
+2023_0070,2023,2023-08-28,Brighton,Tottenham,1,2,A→H→A,0,[]
+2023_0015,2023,2023-08-29,Brentford,Tottenham,0,3,A→A→A,1,"[{""team"": ""A"", ""start_minute"": 5, ""trigger_minute"": 90, ""run_length"": 3, ""goals"": [{""minute"": 5, ""player"": ""TOT_10""}, {""minute"": 88, ""player"": ""TOT_04""}, {""minute"": 90, ""player"": ""TOT_02""}]}]"
+2023_0043,2023,2023-08-29,Man United,Brentford,2,1,H→A→H,0,[]
+2023_0071,2023,2023-08-29,Liverpool,Brentford,1,0,H,0,[]
+2023_0016,2023,2023-08-30,Brentford,Liverpool,0,1,A,0,[]
+2023_0044,2023,2023-08-30,Brentford,West Ham,0,1,A,0,[]
+2023_0072,2023,2023-08-30,Tottenham,Man City,1,1,A→H,0,[]
+2023_0017,2023,2023-08-31,Man United,Arsenal,4,0,H→H→H→H,1,"[{""team"": ""H"", ""start_minute"": 18, ""trigger_minute"": 42, ""run_length"": 4, ""goals"": [{""minute"": 18, ""player"": ""MAN_09""}, {""minute"": 27, ""player"": ""MAN_09""}, {""minute"": 42, ""player"": ""MAN_11""}, {""minute"": 62, ""player"": ""MAN_09""}]}]"
+2023_0045,2023,2023-08-31,Newcastle,Liverpool,2,0,H→H,0,[]
+2023_0073,2023,2023-08-31,Newcastle,Tottenham,2,3,A→H→A→A→H,0,[]
+2023_0018,2023,2023-08-32,Tottenham,Man United,2,1,A→H→H,0,[]
+2023_0046,2023,2023-08-32,Brighton,West Ham,3,2,H→A→H→A→H,0,[]
+2023_0074,2023,2023-08-32,Brighton,Brentford,2,2,H→H→A→A,0,[]
+2023_0019,2023,2023-08-33,Arsenal,Chelsea,3,2,H→H→H→A→A,1,"[{""team"": ""H"", ""start_minute"": 12, ""trigger_minute"": 38, ""run_length"": 3, ""goals"": [{""minute"": 12, ""player"": ""ARS_07""}, {""minute"": 25, ""player"": ""ARS_09""}, {""minute"": 38, ""player"": ""ARS_11""}]}]"
+2023_0047,2023,2023-08-33,Brentford,Brighton,0,4,A→A→A→A,1,"[{""team"": ""A"", ""start_minute"": 32, ""trigger_minute"": 55, ""run_length"": 4, ""goals"": [{""minute"": 32, ""player"": ""BRI_08""}, {""minute"": 49, ""player"": ""BRI_04""}, {""minute"": 55, ""player"": ""BRI_09""}, {""minute"": 93, ""player"": ""BRI_09""}]}]"
+2023_0075,2023,2023-08-33,West Ham,Liverpool,3,0,H→H→H,1,"[{""team"": ""H"", ""start_minute"": 11, ""trigger_minute"": 80, ""run_length"": 3, ""goals"": [{""minute"": 11, ""player"": ""WES_05""}, {""minute"": 32, ""player"": ""WES_02""}, {""minute"": 80, ""player"": ""WES_05""}]}]"
+2023_0020,2023,2023-08-34,Man City,Tottenham,0,0,,0,[]
+2023_0048,2023,2023-08-34,Liverpool,Man City,1,2,A→A→H,0,[]
+2023_0076,2023,2023-08-34,West Ham,Chelsea,0,3,A→A→A,1,"[{""team"": ""A"", ""start_minute"": 1, ""trigger_minute"": 57, ""run_length"": 3, ""goals"": [{""minute"": 1, ""player"": ""CHE_05""}, {""minute"": 14, ""player"": ""CHE_02""}, {""minute"": 57, ""player"": ""CHE_06""}]}]"
+2023_0021,2023,2023-08-35,Brighton,Chelsea,1,1,H→A,0,[]
+2023_0049,2023,2023-08-35,Tottenham,Newcastle,0,1,A,0,[]
+2023_0077,2023,2023-08-35,Tottenham,Chelsea,1,0,H,0,[]
+2023_0022,2023,2023-08-36,Chelsea,Newcastle,1,2,H→A→A,0,[]
+2023_0050,2023,2023-08-36,Brentford,Man United,1,1,A→H,0,[]
+2023_0078,2023,2023-08-36,West Ham,Tottenham,2,0,H→H,0,[]
+2023_0023,2023,2023-08-37,Man City,West Ham,3,0,H→H→H,1,"[{""team"": ""H"", ""start_minute"": 45, ""trigger_minute"": 92, ""run_length"": 3, ""goals"": [{""minute"": 45, ""player"": ""MAN_08""}, {""minute"": 84, ""player"": ""MAN_05""}, {""minute"": 92, ""player"": ""MAN_02""}]}]"
+2023_0051,2023,2023-08-37,Chelsea,Tottenham,2,2,A→H→H→A,0,[]
+2023_0079,2023,2023-08-37,Newcastle,Brighton,2,2,A→A→H→H,0,[]
+2023_0024,2023,2023-08-38,Arsenal,West Ham,1,1,A→H,0,[]
+2023_0052,2023,2023-08-38,West Ham,Man City,1,4,A→H→A→A→A,1,"[{""team"": ""A"", ""start_minute"": 68, ""trigger_minute"": 90, ""run_length"": 3, ""goals"": [{""minute"": 68, ""player"": ""MAN_06""}, {""minute"": 86, ""player"": ""MAN_07""}, {""minute"": 90, ""player"": ""MAN_07""}]}]"
+2023_0080,2023,2023-08-38,Chelsea,Brentford,0,0,,0,[]
+2023_0025,2023,2023-08-39,Man City,Brentford,3,2,H→H→H→A→A,1,"[{""team"": ""H"", ""start_minute"": 12, ""trigger_minute"": 38, ""run_length"": 3, ""goals"": [{""minute"": 12, ""player"": ""MAN_07""}, {""minute"": 25, ""player"": ""MAN_09""}, {""minute"": 38, ""player"": ""MAN_11""}]}]"
+2023_0053,2023,2023-08-39,Arsenal,Newcastle,1,0,H,0,[]
+2023_0081,2023,2023-08-39,Chelsea,Liverpool,1,1,A→H,0,[]
+2023_0026,2023,2023-08-40,Man City,Arsenal,2,2,H→A→H→A,0,[]
+2023_0054,2023,2023-08-40,Liverpool,Chelsea,1,1,H→A,0,[]
+2023_0082,2023,2023-08-40,Brighton,Man City,3,1,H→H→H→A,1,"[{""team"": ""H"", ""start_minute"": 1, ""trigger_minute"": 49, ""run_length"": 3, ""goals"": [{""minute"": 1, ""player"": ""BRI_07""}, {""minute"": 43, ""player"": ""BRI_10""}, {""minute"": 49, ""player"": ""BRI_06""}]}]"
+2023_0027,2023,2023-08-41,Man United,Man City,1,2,H→A→A,0,[]
+2023_0055,2023,2023-08-41,Liverpool,Man United,2,0,H→H,0,[]
+2023_0083,2023,2023-08-41,West Ham,Newcastle,3,0,H→H→H,1,"[{""team"": ""H"", ""start_minute"": 23, ""trigger_minute"": 78, ""run_length"": 3, ""goals"": [{""minute"": 23, ""player"": ""WES_07""}, {""minute"": 62, ""player"": ""WES_06""}, {""minute"": 78, ""player"": ""WES_04""}]}]"

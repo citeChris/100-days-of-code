@@ -1,0 +1,9 @@
+# EPL 3UAG Pipeline — Python dependencies
+#
+# Core (required for demo + full pipeline)
+pandas>=2.0.0
+tqdm>=4.66.0
+
+# Required ONLY for live Understat data fetching (not needed for demo.py)
+understat>=0.3.0
+aiohttp>=3.9.0
